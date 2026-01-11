@@ -19,6 +19,11 @@
   display: none !important;
 }
 
+/* Hide SVG icons on hover to fix underline */
+.markdown-preview-view .internal-link:hover::before {
+  display: none !important;
+}
+
 /* External links */
 .markdown-preview-view .external-link {
   color: var(--interactive-accent) !important;
