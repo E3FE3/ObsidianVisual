@@ -15,6 +15,6 @@ SORT file.name ASC
 ```
 
 ## Связанные
-- [[Home]] - Назад в dashboard
-- [[Windows]] - Команды Windows
-- [[VPS]] - Команды VPS
+- [[_Dashboard/Home|🏠 На главную]]
+- [[Systems/WINDOWS/Windows|🪟 Windows]]
+- [[Systems/VPS/VPS|🌐 VPS]]

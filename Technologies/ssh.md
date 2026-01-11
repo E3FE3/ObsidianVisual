@@ -25,6 +25,6 @@ SORT system ASC, file.name ASC
 - Проброс портов/туннелирование
 
 ## Связанные
-- [[TheYvnHub]] - Hub сервер
-- [[TheYvnAI]] - AI сервер
-- [[VPS]] - VPS серверы
+- [[Systems/VPS/The Yvn Hub/TheYvnHub|🌐 TheYvnHub]] - Hub сервер
+- [[Systems/VPS/The Yvn AI/TheYvnAI|🌐 TheYvnAI]] - AI сервер
+- [[Systems/VPS/VPS|🌐 VPS]] - VPS серверы

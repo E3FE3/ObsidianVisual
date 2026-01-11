@@ -15,6 +15,6 @@ SORT file.name ASC
 ```
 
 ## Связанные
-- [[Home]] - Назад в dashboard
-- [[WSL]] - Команды WSL
-- [[VPS]] - Команды VPS
+- [[_Dashboard/Home|🏠 На главную]]
+- [[Systems/WSL/WSL|🐧 WSL]]
+- [[Systems/VPS/VPS|🌐 VPS]]

@@ -32,7 +32,7 @@ rclone mount theyvnhub: V: --vfs-cache-mode full
 ```
 
 ## Связанные
-- [[VPS]] - Все VPS серверы
-- [[TheYvnAI]] - AI сервер
-- [[ssh]] - Команды SSH
-- [[rclone]] - Команды монтирования
+- [[Systems/VPS/VPS|🌐 Все VPS серверы]]
+- [[The Yvn AI/TheYvnAI|🌐 TheYvnAI]] - AI сервер
+- [[Technologies/ssh|🔑 ssh]] - Команды SSH
+- [[Technologies/rclone|🔐 rclone]] - Команды монтирования
