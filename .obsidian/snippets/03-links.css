@@ -11,9 +11,10 @@
 .markdown-preview-view .internal-link:hover {
   text-decoration: none !important;
   background-image: linear-gradient(var(--interactive-accent), var(--interactive-accent)) !important;
-  background-position: 1.5em 100% !important; /* Start after icon */
+  background-position: 0 100% !important;
   background-repeat: no-repeat !important;
-  background-size: calc(100% - 1.5em) 1px !important;
+  background-size: 100% 1px !important;
+  clip-path: polygon(1.5em 0, 100% 0, 100% 100%, 1.5em 100%); /* Clip icon area */
 }
 
 /* Don't hide SVG icons - keep them visible */
