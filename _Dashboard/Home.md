@@ -19,18 +19,6 @@ cssclasses:
 
 ---
 
-## Недавние команды
-
-| Name | Description |
-|------|-------------|
-| [[Snippets/Check Database Status\|🔍 Check Database Status]] | Проверка статуса баз данных |
-| [[Snippets/Check Disk Space\|💾 Check Disk Space]] | Проверка дискового пространства |
-| [[Snippets/Check LiteLLM Status\|🤖 Check LiteLLM Status]] | Статус LiteLLM прокси |
-| [[Snippets/Check Ollama Status\|🧠 Check Ollama Status]] | Статус сервиса Ollama |
-| [[Snippets/Check System Performance\|📊 Check System Performance]] | Мониторинг CPU и RAM |
-
----
-
 ## Технологии
 
 | Name | Description |
