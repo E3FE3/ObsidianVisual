@@ -10,19 +10,14 @@
 
 .markdown-preview-view .internal-link:hover {
   text-decoration: none !important;
-  border-bottom: 1px solid var(--interactive-accent) !important;
-  padding-bottom: 1px !important;
+  background-image: linear-gradient(var(--interactive-accent), var(--interactive-accent)) !important;
+  background-position: 1.5em 100% !important; /* Start after icon */
+  background-repeat: no-repeat !important;
+  background-size: calc(100% - 1.5em) 1px !important;
+  padding-left: 1.5em !important; /* Space for icon */
 }
 
-/* Hide file icons before links */
-.markdown-preview-view .internal-link::before {
-  display: none !important;
-}
-
-/* Hide SVG icons on hover to fix underline */
-.markdown-preview-view .internal-link:hover::before {
-  display: none !important;
-}
+/* Don't hide SVG icons - keep them visible */
 
 /* External links */
 .markdown-preview-view .external-link {
