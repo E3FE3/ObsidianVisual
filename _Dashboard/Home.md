@@ -14,8 +14,8 @@ cssclasses:
 |------|-------------|
 | [[Systems/WINDOWS/Windows\|🪟 Windows]] | Локальный ПК. PowerShell & CMD команды. |
 | [[Systems/WSL/WSL\|🐧 WSL]] | Ubuntu среда разработки и управления. |
-| [[Systems/VPS/The Yvn Hub/TheYvnHub\|🌐 VPS Hub]] | Инфраструктурный сервер (Plane, n8n). |
-| [[Systems/VPS/The Yvn AI/TheYvnAI\|🧠 VPS AI]] | LLM Сервер (Ollama, LiteLLM). |
+| [[Systems/VPS/The Yvn Hub/TheYvnHub\|🌐 VPS • THE YVN HUB]] | Инфраструктурный сервер (Plane, n8n). |
+| [[Systems/VPS/The Yvn AI/TheYvnAI\|🧠 VPS • THE YVN AI]] | LLM Сервер (Ollama, LiteLLM). |
 
 ---
 
