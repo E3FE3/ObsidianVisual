@@ -1,27 +1,24 @@
-# User Guide: Apple Music Theme
+# Руководство пользователя: Тема Apple Music
 
-## Overview
-This theme transforms Obsidian into a visually stunning environment inspired by the Apple Music Desktop app (Dark Mode), featuring the requested "Fire Orange" accent color.
+## Обзор
+Эта тема преобразует Obsidian в визуально впечатляющую среду, вдохновленную десктопным приложением Apple Music (Темная тема), с использованием запрошенного акцентного цвета "Огненный оранжевый" ("Fire Orange").
 
-## Installation & Activation
+## ❗ ВАЖНО ДЛЯ ПОЛЬЗОВАТЕЛЕЙ WINDOWS ❗
+Чтобы достичь настоящего стиля "как в приложении", показанного в дизайне, вы **ОБЯЗАНЫ** изменить одну настройку в Obsidian:
 
-1. **Open Obsidian Settings**.
-2. Navigate to **Appearance**.
-3. Under **Themes**, select **AppleMusic**.
-4. Ensure **Base color scheme** is set to **Dark**.
+1.  Зайдите в **Настройки (Settings)** > **Оформление (Appearance)**.
+2.  Найдите пункт **Стиль рамки окна (Window frame style)**.
+3.  Установите его в значение **Скрытая (Hidden)** (Obsidian потребует перезапуска).
 
-> **Note:** This theme requires certain default CSS snippets to be disabled to work correctly. The configuration file `appearance.json` has been automatically updated to disable conflicting snippets (like `00-reset`, `01-variables`). If you manually re-enable them, the theme might not look correct.
+Без этого вы будете видеть стандартную строку заголовка Windows, что нарушает эффект погружения.
 
-## Recommended Settings for Best Experience
+## Установка и Активация
 
-### Appearance
-- **Translucency effect**: **On** (This enables the blurry sidebar background).
-- **Window frame style**: **Hidden** (This integrates the title bar with the sidebar).
-- **Font**: The theme uses System Fonts (`-apple-system`). You do not need to install anything extra.
+1.  **Откройте настройки Obsidian**.
+2.  Перейдите в раздел **Оформление (Appearance)**.
+3.  В пункте **Темы (Themes)** выберите **AppleMusic**.
+4.  Убедитесь, что **Базовая цветовая схема (Base color scheme)** установлена в **Темная (Dark)**.
 
-### Plugins (Optional but Recommended)
-- **Hiding UI**: To get the cleanest look, you might want to collapse the right sidebar.
-
-## Troubleshooting
-- **If colors look wrong**: Ensure you are in Dark Mode.
-- **If elements look standard**: Check *Settings > Appearance > CSS snippets* and ensure `00-reset` and `01-variables` are disabled.
+## Устранение неполадок (Troubleshooting)
+-   **Если таблицы выглядят странно**: Убедитесь, что сниппет `02-tables` отключен (тема теперь обрабатывает таблицы нативно).
+-   **Если вы видите боковую ленту (ribbon)**: Тема скрывает левую ленту (полоску с иконками), чтобы имитировать Apple Music. Используйте Палитру команд (Ctrl/Cmd+P) для доступа к плагинам при необходимости.

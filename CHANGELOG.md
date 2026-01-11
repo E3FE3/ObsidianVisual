@@ -1,11 +1,11 @@
-# Changelog
+# История изменений (Changelog)
 
-## [1.0.0] - Apple Music Theme
-### Added
-- New Theme located in `.obsidian/themes/AppleMusic/`.
-- Implemented "Fire Orange" (`#E85D3D`) accent color throughout the UI.
-- Apple Music style Sidebar with translucency support.
-- Modern typography stack using system fonts (`SF Pro`, `Inter`).
-- Rounded UI elements (buttons, inputs, active states).
-- Custom scrollbar styling.
-- `USER_GUIDE.md` for easy installation.
+## [1.0.0] - Тема Apple Music
+### Добавлено
+- Новая тема размещена в `.obsidian/themes/AppleMusic/`.
+- Реализован акцентный цвет "Огненный оранжевый" (`#E85D3D`) по всему интерфейсу.
+- Боковая панель в стиле Apple Music с поддержкой полупрозрачности.
+- Современный стек шрифтов, использующий системные шрифты (`SF Pro`, `Inter`).
+- Скругленные элементы интерфейса (кнопки, поля ввода, активные состояния).
+- Кастомная стилизация полос прокрутки.
+- Добавлен `USER_GUIDE.md` (Руководство пользователя) для легкой установки.

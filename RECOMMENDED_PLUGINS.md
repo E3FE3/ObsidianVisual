@@ -1,19 +1,19 @@
-# Recommended Plugins for Apple Music Experience
+# Рекомендуемые плагины для стиля Apple Music
 
-To achieve the 100% "Apple Music Desktop" look, CSS alone isn't enough. You need to hide standard Obsidian window elements.
+Чтобы достичь 100% сходства с Apple Music Desktop, одного CSS недостаточно. Вам нужно скрыть стандартные элементы окна Obsidian.
 
-## 1. Hider (Highly Recommended)
-This plugin is essential to hide the window frame, title bar, and scrollbars, which gives the app that "native" feel.
+## 1. Hider (Настоятельно рекомендуется)
+Этот плагин необходим, чтобы скрыть рамку окна, строку заголовка и полосы прокрутки, что придает приложению "нативный" вид.
 
-- **Install**: Go to *Community Plugins* -> *Browse* -> Search for **"Hider"** -> *Install* & *Enable*.
-- **Configuration**:
-  - Toggle **ON**: "Hide app ribbon" (The left strip with icons).
-  - Toggle **ON**: "Hide window frame" (Removes the top white/gray bar).
-  - Toggle **ON**: "Hide scrollbars" (Makes them overlay/invisible).
-  - Toggle **ON**: "Hide status bar" (Optional, for cleaner look).
+-   **Установка**: Перейдите в *Сторонние плагины (Community Plugins)* -> *Обзор (Browse)* -> Найдите **"Hider"** -> *Установить (Install)* и *Включить (Enable)*.
+-   **Настройка**:
+    -   Включите **ON**: "Hide app ribbon" (Скрыть ленту приложения / левую полоску с иконками).
+    -   Включите **ON**: "Hide window frame" (Скрыть рамку окна / убирает верхнюю белую/серую полосу).
+    -   Включите **ON**: "Hide scrollbars" (Скрыть полосы прокрутки / делает их накладываемыми/невидимыми).
+    -   Включите **ON**: "Hide status bar" (Скрыть строку состояния / опционально, для чистоты вида).
 
-## 2. Style Settings (You have this installed!)
-This theme is compatible with Style Settings. I will add support in a future update to let you tweak the "Fire Orange" color if you want, but for now, it's hardcoded for the perfect match.
+## 2. Style Settings (У вас уже установлен!)
+Эта тема совместима со Style Settings. В будущем обновлении я добавлю поддержку для настройки цвета "Огненный оранжевый", если вы захотите, но пока он жестко задан для идеального соответствия.
 
 ## 3. Iconize (obsidian-icon-folder)
-You have this! Use it to set folder icons to "SF Symbols" (if available in an icon pack) or simple feather icons to match the Apple sidebar aesthetic.
+У вас он есть! Используйте его, чтобы установить иконки папок в стиле "SF Symbols" (если доступны в наборе иконок) или простые иконки feather, чтобы соответствовать эстетике боковой панели Apple.

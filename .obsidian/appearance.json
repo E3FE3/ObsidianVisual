@@ -5,10 +5,7 @@
   "textFontFamily": "-apple-system, BlinkMacSystemFont, \"SF Pro Text\", \"Inter\", sans-serif",
   "monospaceFontFamily": "\"SF Mono\", \"Menlo\", monospace",
   "enabledCssSnippets": [
-    "02-tables",
-    "03-links",
     "04-callouts",
-    "06-list",
     "06-code",
     "07-grid-system",
     "08-cards"
