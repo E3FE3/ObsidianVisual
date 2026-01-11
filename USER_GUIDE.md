@@ -7,9 +7,10 @@ This theme transforms Obsidian into a visually stunning environment inspired by 
 
 1. **Open Obsidian Settings**.
 2. Navigate to **Appearance**.
-3. Under **Themes**, click the dropdown (currently showing "Default" or "Minimal").
-4. Select **AppleMusic**.
-5. Ensure **Base color scheme** is set to **Dark**.
+3. Under **Themes**, select **AppleMusic**.
+4. Ensure **Base color scheme** is set to **Dark**.
+
+> **Note:** This theme requires certain default CSS snippets to be disabled to work correctly. The configuration file `appearance.json` has been automatically updated to disable conflicting snippets (like `00-reset`, `01-variables`). If you manually re-enable them, the theme might not look correct.
 
 ## Recommended Settings for Best Experience
 
@@ -21,9 +22,6 @@ This theme transforms Obsidian into a visually stunning environment inspired by 
 ### Plugins (Optional but Recommended)
 - **Hiding UI**: To get the cleanest look, you might want to collapse the right sidebar.
 
-## Customization
-The theme uses CSS variables. You can override them using a snippet if needed, but the defaults are tuned for the "Fire Orange" (#E85D3D) aesthetic.
-
 ## Troubleshooting
 - **If colors look wrong**: Ensure you are in Dark Mode.
-- **If elements look standard**: Make sure no other CSS snippets are conflicting. You might want to toggle off other snippets in *Appearance > CSS snippets* to see the pure theme.
+- **If elements look standard**: Check *Settings > Appearance > CSS snippets* and ensure `00-reset` and `01-variables` are disabled.

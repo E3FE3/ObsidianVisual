@@ -1,18 +1,11 @@
 {
   "enabledCssSnippets": [
-    "00-reset",
-    "00-ui-controls",
-    "00-animations",
-    "01-variables",
     "02-tables",
     "03-links",
     "04-callouts",
-    "05-headings",
-    "06-layout",
     "06-list",
     "06-code",
     "07-grid-system",
-    "08-cards",
-    "minimal-launcher"
+    "08-cards"
   ]
 }

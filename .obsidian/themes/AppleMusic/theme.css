@@ -17,28 +17,28 @@
   --bg-selection: rgba(232, 93, 61, 0.2);
 
   /* --- Obsidian Mappings --- */
-  --background-primary: var(--bg-1);
-  --background-primary-alt: var(--bg-2);
-  --background-secondary: var(--bg-2);
-  --background-secondary-alt: var(--bg-1);
-  --background-modifier-border: rgba(255, 255, 255, 0.08);
-  --background-modifier-form-field: var(--bg-3);
+  --background-primary: var(--bg-1) !important;
+  --background-primary-alt: var(--bg-2) !important;
+  --background-secondary: var(--bg-2) !important;
+  --background-secondary-alt: var(--bg-1) !important;
+  --background-modifier-border: rgba(255, 255, 255, 0.08) !important;
+  --background-modifier-form-field: var(--bg-3) !important;
 
   /* --- Typography Colors --- */
-  --text-normal: #FFFFFF;
-  --text-muted: #98989D;   /* Apple Secondary Label Color */
-  --text-faint: #636366;   /* Apple Tertiary Label Color */
-  --text-on-accent: #FFFFFF;
+  --text-normal: #FFFFFF !important;
+  --text-muted: #98989D !important;   /* Apple Secondary Label Color */
+  --text-faint: #636366 !important;   /* Apple Tertiary Label Color */
+  --text-on-accent: #FFFFFF !important;
 
   /* --- Accent --- */
   --accent-h: 11;
   --accent-s: 78%;
   --accent-l: 57%;
-  --interactive-accent: #E85D3D;
-  --interactive-accent-hover: #FF6B4A;
+  --interactive-accent: #E85D3D !important;
+  --interactive-accent-hover: #FF6B4A !important;
   --interactive-accent-rgb: 232, 93, 61;
-  --text-accent: #E85D3D;
-  --text-accent-hover: #FF6B4A;
+  --text-accent: #E85D3D !important;
+  --text-accent-hover: #FF6B4A !important;
 
   /* --- Dimensions & Spacing --- */
   --radius-s: 6px;
@@ -48,13 +48,31 @@
   --button-radius: 8px;
 
   /* --- Typography --- */
-  --font-interface: -apple-system, BlinkMacSystemFont, "SF Pro Text", "Inter", sans-serif;
-  --font-text: -apple-system, BlinkMacSystemFont, "SF Pro Text", "Inter", sans-serif;
-  --font-monospace: "SF Mono", "Menlo", monospace;
+  --font-interface: -apple-system, BlinkMacSystemFont, "SF Pro Text", "Inter", sans-serif !important;
+  --font-text: -apple-system, BlinkMacSystemFont, "SF Pro Text", "Inter", sans-serif !important;
+  --font-monospace: "SF Mono", "Menlo", monospace !important;
 
   /* --- Shadows --- */
   --shadow-s: 0 1px 2px rgba(0,0,0,0.3);
   --shadow-l: 0 10px 30px rgba(0,0,0,0.5);
+}
+
+/* ==========================================================================
+   GLOBAL RESET (Replaces 00-reset.css)
+   ========================================================================== */
+body {
+    line-height: 1.5;
+    --link-color: var(--text-normal);
+    --link-color-hover: var(--interactive-accent);
+}
+
+* {
+    box-sizing: border-box;
+}
+
+:focus-visible {
+    outline: 2px solid var(--interactive-accent) !important;
+    outline-offset: 1px;
 }
 
 /* ==========================================================================
@@ -64,13 +82,14 @@
 /* --- Sidebar (Left Split) --- */
 .workspace-split.mod-left-split,
 .workspace-ribbon.mod-left {
-  background-color: var(--background-secondary);
+  background-color: var(--background-secondary) !important;
+  border-right: 1px solid rgba(0,0,0,0.2);
 }
 
 /* Translucency Effect for Sidebar */
 body.is-translucent .workspace-split.mod-left-split,
 body.is-translucent .workspace-ribbon.mod-left {
-  background-color: rgba(38, 38, 38, 0.7);
+  background-color: rgba(38, 38, 38, 0.7) !important;
   backdrop-filter: saturate(180%) blur(20px);
 }
 
@@ -82,6 +101,7 @@ body.is-translucent .workspace-ribbon.mod-left {
   font-size: 14px;
   color: var(--text-muted);
   transition: background-color 0.15s ease, color 0.15s ease;
+  cursor: default;
 }
 
 .nav-file-title:hover, .nav-folder-title:hover {
@@ -91,8 +111,8 @@ body.is-translucent .workspace-ribbon.mod-left {
 
 /* Active File in Sidebar */
 .nav-file-title.is-active {
-  background-color: rgba(255, 255, 255, 0.1);
-  color: var(--interactive-accent);
+  background-color: rgba(255, 255, 255, 0.1) !important;
+  color: var(--interactive-accent) !important;
   font-weight: 600;
 }
 
@@ -108,17 +128,28 @@ body.is-translucent .workspace-ribbon.mod-left {
 
 /* --- Main Content View --- */
 .view-content {
-  background-color: var(--background-primary);
+  background-color: var(--background-primary) !important;
+}
+
+.markdown-source-view.mod-cm6 .cm-scroller {
+    padding: 20px 40px !important;
+}
+
+/* Reading View Container */
+.markdown-preview-view {
+    padding: 20px 50px !important;
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
 /* Title Bar (Mac Style) */
 .titlebar {
-  background-color: var(--background-secondary);
+  background-color: var(--background-secondary) !important;
   border-bottom: 1px solid var(--background-modifier-border);
 }
 
 .view-header {
-  background-color: var(--background-primary);
+  background-color: var(--background-primary) !important;
   border-bottom: 1px solid var(--background-modifier-border);
 }
 
@@ -128,20 +159,24 @@ body.is-translucent .workspace-ribbon.mod-left {
 
 h1, h2, h3, h4, h5, h6 {
   color: var(--text-normal);
-  letter-spacing: -0.01em;
+  letter-spacing: -0.015em;
+  margin-top: 1.5em;
+  margin-bottom: 0.5em;
 }
 
-h1 { font-weight: 700; }
-h2 { font-weight: 600; }
+h1 { font-weight: 700; font-size: 2.2em; }
+h2 { font-weight: 600; font-size: 1.8em; }
+h3 { font-weight: 600; font-size: 1.4em; }
 
 /* Links */
-a, .cm-link {
-  color: var(--text-accent);
-  text-decoration: none;
+a, .cm-link, .internal-link {
+  color: var(--text-normal); /* Apple Music style: links are white/text color unless hovered */
+  text-decoration: none !important;
+  transition: color 0.2s ease;
 }
 
-a:hover {
-  text-decoration: underline;
+a:hover, .cm-link:hover, .internal-link:hover {
+  color: var(--interactive-accent) !important;
 }
 
 /* ==========================================================================
@@ -150,15 +185,16 @@ a:hover {
 
 /* Buttons */
 button.mod-cta {
-  background-color: var(--interactive-accent);
+  background-color: var(--interactive-accent) !important;
   color: white;
   font-weight: 500;
   border-radius: var(--button-radius);
   transition: opacity 0.2s;
+  border: none;
 }
 
 button.mod-cta:hover {
-  background-color: var(--interactive-accent-hover);
+  background-color: var(--interactive-accent-hover) !important;
   box-shadow: 0 2px 8px rgba(232, 93, 61, 0.3);
 }
 
@@ -170,34 +206,38 @@ input[type="checkbox"] {
   width: 16px;
   height: 16px;
   transition: all 0.2s ease;
+  background-color: transparent;
 }
 
 input[type="checkbox"]:checked {
-  background-color: var(--interactive-accent);
-  border-color: var(--interactive-accent);
+  background-color: var(--interactive-accent) !important;
+  border-color: var(--interactive-accent) !important;
   background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 14 14'%3E%3Cpath fill='white' d='M3.5 7L5.5 9L10.5 4' stroke='white' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");
 }
 
 /* Toggle Switch (Apple Style) */
+.checkbox-container {
+    background-color: #3A3A3A !important;
+}
 .checkbox-container.is-enabled {
   background-color: var(--interactive-accent) !important;
 }
 
 /* Scrollbars (hidden/overlay style) */
 ::-webkit-scrollbar {
-  width: 10px;
+  width: 12px;
   background-color: transparent;
 }
 
 ::-webkit-scrollbar-thumb {
-  background-color: rgba(255, 255, 255, 0.2);
+  background-color: rgba(255, 255, 255, 0.15);
   border-radius: 10px;
-  border: 3px solid transparent;
+  border: 4px solid transparent;
   background-clip: content-box;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background-color: rgba(255, 255, 255, 0.4);
+  background-color: rgba(255, 255, 255, 0.3);
 }
 
 /* ==========================================================================
@@ -211,7 +251,7 @@ body.theme-light, body.theme-dark {
 
 /* Status Bar */
 .status-bar {
-  background-color: var(--background-secondary);
+  background-color: var(--background-secondary) !important;
   border-top: 1px solid var(--background-modifier-border);
   color: var(--text-muted);
 }
