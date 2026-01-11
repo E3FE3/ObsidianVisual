@@ -9,7 +9,8 @@
 }
 
 .markdown-preview-view .internal-link:hover {
-  text-decoration: underline !important;
+  text-decoration: none !important;
+  text-shadow: 0 1px 0 var(--interactive-accent) !important;
 }
 
 /* Hide file icons before links */

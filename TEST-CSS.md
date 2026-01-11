@@ -4,6 +4,35 @@ cssclasses:
   - cards-cols-3
 ---
 
+<style>
+/* EXPERIMENT: Fix underline only for text, not icons */
+.internal-link {
+  position: relative !important;
+  text-decoration: none !important;
+  display: inline-flex !important;
+  align-items: center !important;
+  gap: 0.5em !important;
+  padding-left: 1.7em !important; /* Space for icon */
+}
+
+.internal-link:hover {
+  text-decoration: none !important;
+  border-bottom: none !important; /* Override old underline */
+  text-shadow: 
+    0 1px 0 var(--interactive-accent), /* Underline only */
+    0 0 0 transparent; /* Reset other shadows */
+}
+
+/* Icon positioning - move outside text area */
+.internal-link::before {
+  position: absolute !important;
+  left: 0 !important;
+  top: 50% !important;
+  transform: translateY(-50%) !important;
+  margin-right: 0 !important;
+}
+</style>
+
 # 🧪 CSS PLAYGROUND - LAUNCHER v3.0
 
 **Файл для тестирования и экспериментов с дизайн-системой Apple Music.**
