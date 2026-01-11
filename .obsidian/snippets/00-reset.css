@@ -101,10 +101,10 @@ button:hover,
 }
 
 /* === LINK DECORATION CONTROL === */
-/* Use Obsidian CSS variables for proper link styling */
+/* Remove all underlines to avoid icon issues */
 body {
   --link-decoration: none !important;
-  --link-decoration-hover: underline !important;
+  --link-decoration-hover: none !important;
   --link-external-decoration: none !important;
-  --link-external-decoration-hover: underline !important;
+  --link-external-decoration-hover: none !important;
 }

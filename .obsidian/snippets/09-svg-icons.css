@@ -33,12 +33,11 @@
 /* Monitor - Windows */
 .internal-link[href*="Windows"]::before {
   content: '' !important;
-  position: absolute !important;
-  left: -1.5em !important;
-  top: 50% !important;
-  transform: translateY(-50%) !important;
+  display: inline-block !important;
   width: 1.2em !important;
   height: 1.2em !important;
+  margin-right: 0.8em !important;
+  vertical-align: -0.2em !important;
   background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23FFFFFF' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Crect width='20' height='14' x='2' y='3' rx='2'%3E%3C/rect%3E%3Cline x1='8' x2='16' y1='21' y2='21'%3E%3C/line%3E%3Cline x1='12' x2='12' y1='17' y2='21'%3E%3C/line%3E%3C/svg%3E") !important;
   background-size: contain !important;
   background-repeat: no-repeat !important;
@@ -48,12 +47,11 @@
 /* Terminal - WSL */
 .internal-link[href*="WSL"]::before {
   content: '' !important;
-  position: absolute !important;
-  left: -1.5em !important;
-  top: 50% !important;
-  transform: translateY(-50%) !important;
+  display: inline-block !important;
   width: 1.2em !important;
   height: 1.2em !important;
+  margin-right: 0.8em !important;
+  vertical-align: -0.2em !important;
   background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23FFFFFF' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpolyline points='4 17 10 11 4 5'%3E%3C/polyline%3E%3Cline x1='12' x2='20' y1='19' y2='19'%3E%3C/line%3E%3C/svg%3E") !important;
   background-size: contain !important;
   background-repeat: no-repeat !important;
@@ -64,12 +62,11 @@
 .internal-link[href*="VPS"]::before,
 .internal-link[href*="TheYvn"]::before {
   content: '' !important;
-  position: absolute !important;
-  left: -1.5em !important;
-  top: 50% !important;
-  transform: translateY(-50%) !important;
+  display: inline-block !important;
   width: 1.2em !important;
   height: 1.2em !important;
+  margin-right: 0.8em !important;
+  vertical-align: -0.2em !important;
   background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23FFFFFF' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Ccircle cx='12' cy='12' r='10'%3E%3C/circle%3E%3Cpath d='M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20'%3E%3C/path%3E%3Cpath d='M2 12h20'%3E%3C/path%3E%3C/svg%3E") !important;
   background-size: contain !important;
   background-repeat: no-repeat !important;
@@ -79,12 +76,11 @@
 /* Cloud - Rclone */
 .internal-link[href*="rclone"]::before {
   content: '' !important;
-  position: absolute !important;
-  left: -1.5em !important;
-  top: 50% !important;
-  transform: translateY(-50%) !important;
+  display: inline-block !important;
   width: 1.2em !important;
   height: 1.2em !important;
+  margin-right: 0.8em !important;
+  vertical-align: -0.2em !important;
   background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23FFFFFF' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M17.5 19H9a7 7 0 1 1 6.71-9h1.79a4.5 4.5 0 1 1 0 9Z'%3E%3C/path%3E%3C/svg%3E") !important;
   background-size: contain !important;
   background-repeat: no-repeat !important;

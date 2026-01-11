@@ -6,8 +6,6 @@
 .markdown-preview-view .internal-link {
   color: var(--interactive-accent) !important;
   text-decoration: none !important;
-  position: relative !important;
-  padding-left: 1.5em !important;
 }
 
 .markdown-preview-view .internal-link:hover {
