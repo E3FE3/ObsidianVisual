@@ -44,8 +44,8 @@ systemctl --user status ai-server
 ```
 
 ## Связанные
-- [[Systems/VPS/VPS|🌐 Все VPS серверы]]
-- [[The Yvn Hub/TheYvnHub|🌐 TheYvnHub]] - Инфраструктурный сервер
-- [[Technologies/ssh|🔑 ssh]] - Команды SSH
-- [[Technologies/rclone|🔐 rclone]] - Команды монтирования
-- [[Technologies/podman|📦 podman]] - Управление контейнерами
+- [[Systems/VPS/VPS|:LiGlobe: Все VPS серверы]]
+- [[The Yvn Hub/TheYvnHub|:LiGlobe: TheYvnHub]] - Инфраструктурный сервер
+- [[Technologies/ssh|:LiKey: ssh]] - Команды SSH
+- [[Technologies/rclone|:LiCloud: rclone]] - Команды монтирования
+- [[Technologies/podman|:LiPackage: podman]] - Управление контейнерами

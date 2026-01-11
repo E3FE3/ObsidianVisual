@@ -9,20 +9,97 @@
   display: none !important;
 }
 
+/* === TOGGLE SWITCHES (Settings) === */
+/* OFF state - visible gray */
+.checkbox-container {
+  background-color: var(--launcher-bg-tertiary) !important;
+  border: 1px solid var(--launcher-border-medium) !important;
+}
+
+.checkbox-container:hover {
+  background-color: var(--launcher-bg-elevated) !important;
+  border-color: var(--launcher-border-hover) !important;
+}
+
+/* ON state - fire orange */
+.checkbox-container.is-enabled {
+  background-color: var(--launcher-accent) !important;
+  border: 1px solid var(--launcher-accent) !important;
+}
+
+.checkbox-container.is-enabled:hover {
+  background-color: var(--launcher-accent-hover) !important;
+}
+
 /* Better checkboxes */
 input[type="checkbox"] {
   width: 18px;
   height: 18px;
   cursor: pointer;
+  accent-color: var(--launcher-accent) !important;
 }
 
 /* Better inputs */
 input[type="text"],
 input[type="email"],
+input[type="search"],
 textarea {
-  padding: 0.5rem 0.75rem;
-  border: 1px solid var(--launcher-border);
-  border-radius: var(--launcher-radius-sm);
+  padding: 0.5rem 0.75rem !important;
+  border: 1px solid var(--launcher-border) !important;
+  border-radius: var(--launcher-radius-sm) !important;
+  background: var(--launcher-bg-secondary) !important;
+  color: var(--launcher-text) !important;
+  font-family: var(--launcher-font-sans) !important;
+}
+
+input:focus,
+textarea:focus {
+  border-color: var(--launcher-accent) !important;
+  outline: none !important;
+}
+
+/* === BUTTONS === */
+button {
+  padding: 0.5rem 1rem !important;
+  border-radius: var(--launcher-radius-sm) !important;
+  font-family: var(--launcher-font-sans) !important;
+  font-weight: var(--launcher-weight-medium) !important;
+  transition: all var(--launcher-transition-fast) !important;
+  cursor: pointer !important;
+}
+
+.mod-cta,
+button.mod-cta {
+  background: var(--launcher-accent) !important;
+  color: white !important;
+  border: none !important;
+}
+
+.mod-cta:hover,
+button.mod-cta:hover {
+  background: var(--launcher-accent-hover) !important;
+}
+
+/* === SETTINGS LAYOUT === */
+.setting-item {
+  padding: 1rem 0 !important;
+  border-bottom: 1px solid var(--launcher-border-subtle) !important;
+}
+
+.setting-item-info {
+  margin-right: 1rem !important;
+}
+
+.setting-item-name {
+  font-weight: var(--launcher-weight-semibold) !important;
+  color: var(--launcher-text) !important;
+  margin-bottom: 0.25rem !important;
+}
+
+.setting-item-description {
+  font-size: var(--launcher-font-sm) !important;
+  color: var(--launcher-text-secondary) !important;
+  line-height: var(--launcher-leading-relaxed) !important;
 }
 
 /* Scrollbar styling */

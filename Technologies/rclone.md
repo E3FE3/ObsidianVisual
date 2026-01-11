@@ -25,6 +25,6 @@ SORT system ASC, file.name ASC
 - Просмотр удалённых файлов локально
 
 ## Связанные
-- [[Snippets/Mount TheYvnHub|🔐 Mount TheYvnHub]] - Монтирование Hub сервера
-- [[Technologies/ssh|🔑 ssh]] - Команды SSH подключения
-- [[Systems/VPS/VPS|🌐 VPS]] - VPS серверы
+- [[Snippets/Mount TheYvnHub|:LiCloud: Mount TheYvnHub]] - Монтирование Hub сервера
+- [[Technologies/ssh|:LiKey: ssh]] - Команды SSH подключения
+- [[Systems/VPS/VPS|:LiGlobe: VPS]] - VPS серверы

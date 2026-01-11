@@ -38,9 +38,9 @@ SORT system ASC, file.name ASC
 - Локальная разработка Kubernetes-совместимых приложений
 
 ## Скрипты управления
-- [[Scripts/manage-podman-pods.sh|🛠️ manage-podman-pods.sh]] - Скрипт для автоматизации работы с подами на TheYvnHub
+- [[Scripts/manage-podman-pods.sh|:LiWrench: manage-podman-pods.sh]] - Скрипт для автоматизации работы с подами на TheYvnHub
 
 ## Связанные
-- [[Systems/VPS/The Yvn Hub/TheYvnHub|🌐 TheYvnHub]] - Hub сервер (использует Podman)
-- [[Systems/VPS/The Yvn AI/TheYvnAI|🌐 TheYvnAI]] - AI сервер (использует Podman)
-- [[Systems/VPS/VPS|🌐 VPS]] - VPS серверы
+- [[Systems/VPS/The Yvn Hub/TheYvnHub|:LiGlobe: TheYvnHub]] - Hub сервер (использует Podman)
+- [[Systems/VPS/The Yvn AI/TheYvnAI|:LiGlobe: TheYvnAI]] - AI сервер (использует Podman)
+- [[Systems/VPS/VPS|:LiGlobe: VPS]] - VPS серверы

@@ -1,86 +1,141 @@
 /* =============================================
-   LAUNCHER - Dataview Tables Styling
+   TABLES - Apple Music Style
+   Clean & Professional Tables
    ============================================= */
 
-/* Base table styling */
-.dataview.table-view-table {
+/* === BASE TABLE === */
+table {
   width: 100% !important;
-  table-layout: fixed !important;
-  border: 1px solid var(--launcher-border) !important;
-  border-radius: var(--launcher-radius-lg) !important;
   border-collapse: separate !important;
   border-spacing: 0 !important;
-  overflow: visible !important;
-  margin: var(--launcher-gap-md) 0 !important;
-  font-size: 0.85rem !important;
+  border-radius: var(--launcher-radius-lg) !important;
+  overflow: hidden !important;
+  background: var(--launcher-bg-card) !important;
+  box-shadow: var(--launcher-shadow-sm) !important;
+  border: 1px solid var(--launcher-border) !important;
+  font-family: var(--launcher-font-sans) !important;
 }
 
-/* Table header */
-.dataview.table-view-table thead tr {
-  background: var(--launcher-bg-secondary) !important;
+/* === TABLE HEADER === */
+thead {
+  background: var(--launcher-bg-tertiary) !important;
+  border-bottom: 1px solid var(--launcher-border-medium) !important;
 }
 
-.dataview.table-view-table th {
-  padding: 0.75rem 1rem !important;
+thead th {
+  padding: var(--launcher-gap-lg) var(--launcher-gap-md) !important;
+  font-weight: var(--launcher-weight-semibold) !important;
   text-align: left !important;
-  font-size: 0.7rem !important;
-  font-weight: 600 !important;
+  font-size: var(--launcher-font-xs) !important;
+  color: var(--launcher-text-secondary) !important;
   text-transform: uppercase !important;
   letter-spacing: 0.05em !important;
-  color: var(--launcher-text-faint) !important;
-  border-bottom: 1px solid var(--launcher-border) !important;
+  border: none !important;
 }
 
-/* Table cells */
-.dataview.table-view-table td {
-  padding: 0.65rem 1rem !important;
-  border-bottom: 1px solid var(--background-modifier-border-faint) !important;
+/* === TABLE BODY === */
+tbody td {
+  padding: var(--launcher-gap-lg) var(--launcher-gap-md) !important;
+  border-bottom: 1px solid var(--launcher-border-subtle) !important;
+  font-size: var(--launcher-font-sm) !important;
   color: var(--launcher-text) !important;
+  line-height: var(--launcher-leading-normal) !important;
+}
+
+/* Hover row effect - subtle */
+tbody tr {
+  transition: all var(--launcher-transition-fast) !important;
+  cursor: default !important;
+}
+
+tbody tr:hover {
+  background: var(--launcher-bg-hover) !important;
 }
 
 /* Last row - no border */
-.dataview.table-view-table tbody tr:last-child td {
+tbody tr:last-child td {
   border-bottom: none !important;
 }
 
-/* Row hover effect */
+/* === TABLE LINKS === */
+table a {
+  color: var(--launcher-text) !important;
+  text-decoration: none !important;
+  transition: color var(--launcher-transition-fast) !important;
+  border-bottom: 1px solid transparent !important;
+}
+
+table a:hover {
+  color: var(--launcher-accent) !important;
+  border-bottom-color: var(--launcher-accent) !important;
+}
+
+/* === COMPACT TABLE VARIANT === */
+.table-compact table tbody td {
+  padding: var(--launcher-gap-md) var(--launcher-gap-sm) !important;
+  font-size: var(--launcher-font-xs) !important;
+}
+
+.table-compact table thead th {
+  padding: var(--launcher-gap-md) var(--launcher-gap-sm) !important;
+}
+
+/* === DATAVIEW TABLE OVERRIDES === */
+.dataview.table-view-table {
+  width: 100% !important;
+  border-radius: var(--launcher-radius-lg) !important;
+  overflow: hidden !important;
+  background: var(--launcher-bg-card) !important;
+  box-shadow: var(--launcher-shadow-sm) !important;
+  border: 1px solid var(--launcher-border) !important;
+}
+
+.dataview.table-view-table thead.table-view-thead {
+  background: var(--launcher-bg-tertiary) !important;
+  border-bottom: 1px solid var(--launcher-border-medium) !important;
+}
+
+.dataview.table-view-table thead.table-view-thead tr {
+  background: transparent !important;
+}
+
+.dataview.table-view-table th {
+  padding: var(--launcher-gap-lg) var(--launcher-gap-md) !important;
+  font-weight: var(--launcher-weight-semibold) !important;
+  text-align: left !important;
+  font-size: var(--launcher-font-xs) !important;
+  color: var(--launcher-text-secondary) !important;
+  text-transform: uppercase !important;
+  letter-spacing: 0.05em !important;
+  border: none !important;
+  font-family: var(--launcher-font-sans) !important;
+}
+
+.dataview.table-view-table tbody td {
+  padding: var(--launcher-gap-lg) var(--launcher-gap-md) !important;
+  border-bottom: 1px solid var(--launcher-border-subtle) !important;
+  font-size: var(--launcher-font-sm) !important;
+  color: var(--launcher-text) !important;
+  font-family: var(--launcher-font-sans) !important;
+}
+
 .dataview.table-view-table tbody tr:hover {
   background: var(--launcher-bg-hover) !important;
 }
 
-/* Links in tables */
-.dataview.table-view-table a {
-  color: var(--launcher-accent) !important;
-  text-decoration: none !important;
-}
-
-.dataview.table-view-table a:hover {
-  text-decoration: underline !important;
-}
-
-/* Markdown tables (non-dataview) */
-.markdown-preview-view table:not(.dataview) {
-  width: 100% !important;
-  table-layout: fixed !important;
-  border: 1px solid var(--launcher-border) !important;
-  border-radius: var(--launcher-radius-md) !important;
-  border-collapse: separate !important;
-  border-spacing: 0 !important;
-  overflow: visible !important;
-}
-
-.markdown-preview-view table:not(.dataview) th {
-  background: var(--launcher-bg-secondary) !important;
-  padding: 0.6rem 0.8rem !important;
-  font-weight: 600 !important;
-  border-bottom: 1px solid var(--launcher-border) !important;
-}
-
-.markdown-preview-view table:not(.dataview) td {
-  padding: 0.5rem 0.8rem !important;
-  border-bottom: 1px solid var(--background-modifier-border-faint) !important;
-}
-
-.markdown-preview-view table:not(.dataview) tr:last-child td {
+.dataview.table-view-table tbody tr:last-child td {
   border-bottom: none !important;
+}
+
+/* Fire orange accent for links in tables */
+.dataview.table-view-table a.internal-link {
+  color: var(--launcher-text) !important;
+  text-decoration: none !important;
+  border-bottom: 1px solid transparent !important;
+  transition: all var(--launcher-transition-fast) !important;
+}
+
+.dataview.table-view-table a.internal-link:hover {
+  color: var(--launcher-accent) !important;
+  border-bottom-color: var(--launcher-accent) !important;
 }

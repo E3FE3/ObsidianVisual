@@ -1,88 +1,199 @@
 /* =============================================
-   CARDS - Reusable Card Component
+   CARDS - Apple Music Style
+   Minimalist & Elegant Card Components
    ============================================= */
 
-/* Base card */
+/* === BASE CARD === */
 .card {
-  background: var(--launcher-bg-secondary) !important;
+  background: var(--launcher-bg-card) !important;
   border: 1px solid var(--launcher-border) !important;
-  border-radius: 8px !important;
-  padding: 1.25rem !important;
+  border-radius: var(--launcher-radius-lg) !important;
+  padding: var(--launcher-gap-xl) !important;
   display: flex !important;
   flex-direction: column !important;
-  gap: 0.75rem !important;
-  transition: all 0.15s ease !important;
+  gap: var(--launcher-gap-md) !important;
+  transition: all var(--launcher-transition) !important;
+  box-shadow: var(--launcher-shadow-sm) !important;
+  position: relative !important;
+  overflow: hidden !important;
 }
 
+/* Subtle hover effect - not too much */
 .card:hover {
-  border-color: var(--interactive-accent) !important;
-  background: var(--launcher-bg-hover) !important;
+  border-color: var(--launcher-border-medium) !important;
+  background: #2A2A2A !important; /* Pure gray, NO blue/purple tint */
   transform: translateY(-2px) !important;
+  box-shadow: var(--launcher-shadow-md) !important;
 }
 
-/* Card header */
+/* === CARD HEADER === */
 .card-header {
   display: flex !important;
   align-items: center !important;
-  gap: 0.75rem !important;
-  border-bottom: 1px solid var(--launcher-border) !important;
-  padding-bottom: 0.5rem !important;
+  gap: var(--launcher-gap-md) !important;
+  padding-bottom: var(--launcher-gap-md) !important;
+  border-bottom: 1px solid var(--launcher-border-subtle) !important;
 }
 
-/* Card icon */
+/* === CARD ICON === */
 .card-icon {
-  font-size: 1.25rem !important;
+  font-size: var(--launcher-font-2xl) !important;
+  line-height: 1 !important;
+  filter: grayscale(0.2) !important;
+  transition: all var(--launcher-transition) !important;
 }
 
-/* Card title */
+.card:hover .card-icon {
+  filter: grayscale(0) !important;
+  transform: scale(1.05) !important;
+}
+
+/* === CARD TITLE === */
 .card-title {
-  font-size: 0.95rem !important;
-  font-weight: 600 !important;
+  font-size: var(--launcher-font-md) !important;
+  font-weight: var(--launcher-weight-semibold) !important;
   margin: 0 !important;
+  color: var(--launcher-text) !important;
+  letter-spacing: -0.01em !important;
+  font-family: var(--launcher-font-sans) !important;
 }
 
-/* Card body */
+/* === CARD BODY === */
 .card-body {
-  font-size: 0.85rem !important;
+  font-size: var(--launcher-font-sm) !important;
   flex-grow: 1 !important;
-  color: var(--text-muted) !important;
-  line-height: 1.5 !important;
+  color: var(--launcher-text-secondary) !important;
+  line-height: var(--launcher-leading-relaxed) !important;
+  font-family: var(--launcher-font-sans) !important;
 }
 
-/* Card footer */
+.card-body p {
+  margin: var(--launcher-gap-sm) 0 !important;
+}
+
+.card-body strong {
+  color: var(--launcher-text) !important;
+  font-weight: var(--launcher-weight-semibold) !important;
+}
+
+/* === CARD FOOTER === */
 .card-footer {
   margin-top: auto !important;
+  padding-top: var(--launcher-gap-md) !important;
   display: flex !important;
-  gap: 0.5rem !important;
+  gap: var(--launcher-gap-sm) !important;
+  flex-wrap: wrap !important;
+  align-items: center !important;
 }
 
-/* Status variants */
+/* === STATUS VARIANTS === */
+/* Fire orange accent - only left border */
+.card-success,
+.card-info,
+.card-warning,
+.card-danger {
+  border-left-width: 2px !important;
+}
+
 .card-success {
-  border-left: 3px solid var(--color-green) !important;
+  border-left-color: var(--launcher-success) !important;
+}
+
+.card-success:hover {
+  border-left-color: var(--launcher-success) !important;
+  box-shadow: -2px 0 8px rgba(48, 209, 88, 0.15), var(--launcher-shadow-md) !important;
 }
 
 .card-info {
-  border-left: 3px solid var(--color-blue) !important;
+  border-left-color: var(--launcher-info) !important;
+}
+
+.card-info:hover {
+  border-left-color: var(--launcher-info) !important;
+  box-shadow: -2px 0 8px rgba(10, 132, 255, 0.15), var(--launcher-shadow-md) !important;
 }
 
 .card-warning {
-  border-left: 3px solid var(--color-orange) !important;
+  border-left-color: var(--launcher-warning) !important;
+}
+
+.card-warning:hover {
+  border-left-color: var(--launcher-warning) !important;
+  box-shadow: -2px 0 8px rgba(255, 159, 10, 0.15), var(--launcher-shadow-md) !important;
 }
 
 .card-danger {
-  border-left: 3px solid var(--color-red) !important;
+  border-left-color: var(--launcher-danger) !important;
 }
 
-/* Compact card variant */
+.card-danger:hover {
+  border-left-color: var(--launcher-danger) !important;
+  box-shadow: -2px 0 8px rgba(255, 69, 58, 0.15), var(--launcher-shadow-md) !important;
+}
+
+/* === ACCENT CARD - Special with fire orange === */
+.card-accent {
+  border-color: var(--launcher-border-hover) !important;
+}
+
+.card-accent:hover {
+  border-color: var(--launcher-accent) !important;
+  box-shadow: 0 0 20px var(--launcher-accent-glow), var(--launcher-shadow-lg) !important;
+}
+
+.card-accent .card-title {
+  color: var(--launcher-accent) !important;
+}
+
+/* === COMPACT VARIANT === */
 .card-compact {
-  padding: 0.75rem !important;
-  gap: 0.5rem !important;
+  padding: var(--launcher-gap-lg) !important;
+  gap: var(--launcher-gap-sm) !important;
+}
+
+.card-compact .card-header {
+  padding-bottom: var(--launcher-gap-sm) !important;
 }
 
 .card-compact .card-title {
-  font-size: 0.85rem !important;
+  font-size: var(--launcher-font-sm) !important;
 }
 
 .card-compact .card-body {
-  font-size: 0.75rem !important;
+  font-size: var(--launcher-font-xs) !important;
+}
+
+/* === GLASS CARD VARIANT === */
+.card-glass {
+  background: var(--launcher-bg-glass) !important;
+  backdrop-filter: var(--launcher-blur-md) !important;
+  -webkit-backdrop-filter: var(--launcher-blur-md) !important;
+  border-color: var(--launcher-border-medium) !important;
+}
+
+.card-glass:hover {
+  background: var(--launcher-bg-glass-hover) !important;
+  backdrop-filter: var(--launcher-blur-lg) !important;
+  -webkit-backdrop-filter: var(--launcher-blur-lg) !important;
+}
+
+/* === INTERACTIVE ELEMENTS === */
+.card a {
+  color: var(--launcher-text-secondary) !important;
+  text-decoration: none !important;
+  transition: color var(--launcher-transition-fast) !important;
+}
+
+.card a:hover {
+  color: var(--launcher-accent) !important;
+}
+
+/* Fire orange underline on hover for links */
+.card-body a {
+  border-bottom: 1px solid transparent !important;
+  transition: all var(--launcher-transition-fast) !important;
+}
+
+.card-body a:hover {
+  border-bottom-color: var(--launcher-accent) !important;
 }

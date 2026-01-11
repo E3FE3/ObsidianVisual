@@ -2,11 +2,11 @@
    LAYOUT & SPACING - General page layout
    ============================================= */
 
-/* Reading view container */
+/* Reading view container - full width for dashboard */
 .markdown-preview-view {
-  max-width: 900px !important;
+  max-width: 1600px !important;
   margin: 0 auto !important;
-  padding: 2rem 1.5rem !important;
+  padding: 2rem 3rem !important;
 }
 
 /* Remove default margins */

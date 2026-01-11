@@ -6,16 +6,16 @@ cssclasses:
   - table-max
 ---
 
-# 🚀 LAUNCHER
+# LAUNCHER
 
 ## Системы
 
 | Name | Description |
 |------|-------------|
-| [[Systems/WINDOWS/Windows\|🪟 Windows]] | Локальный ПК. PowerShell & CMD команды. |
-| [[Systems/WSL/WSL\|🐧 WSL]] | Ubuntu среда разработки и управления. |
-| [[Systems/VPS/The Yvn Hub/TheYvnHub\|🌐 VPS • THE YVN HUB]] | Инфраструктурный сервер (Plane, n8n). |
-| [[Systems/VPS/The Yvn AI/TheYvnAI\|🧠 VPS • THE YVN AI]] | LLM Сервер (Ollama, LiteLLM). |
+| [[Systems/WINDOWS/Windows\|Windows]] | Локальный ПК. PowerShell & CMD команды. |
+| [[Systems/WSL/WSL\|WSL]] | Ubuntu среда разработки и управления. |
+| [[Systems/VPS/The Yvn Hub/TheYvnHub\|VPS • THE YVN HUB]] | Инфраструктурный сервер (Plane, n8n). |
+| [[Systems/VPS/The Yvn AI/TheYvnAI\|VPS • THE YVN AI]] | LLM Сервер (Ollama, LiteLLM). |
 
 ---
 
@@ -23,9 +23,9 @@ cssclasses:
 
 | Name | Description |
 |------|-------------|
-| [[Technologies/rclone\|🔐 Rclone]] | Монтирование и синхронизация облаков. |
-| [[Technologies/ssh\|🔑 SSH]] | Безопасный удалённый доступ. |
-| [[Technologies/podman\|📦 Podman]] | Управление контейнерами и подами. |
+| [[Technologies/rclone\|Rclone]] | Монтирование и синхронизация облаков. |
+| [[Technologies/ssh\|SSH]] | Безопасный удалённый доступ. |
+| [[Technologies/podman\|Podman]] | Управление контейнерами и подами. |
 
 ---
 
@@ -33,7 +33,7 @@ cssclasses:
 
 | Action | Desc |
 |--------|------|
-| [[_Templates/Command\|📝 Создать команду]] | Новый сниппет |
-| [[_Dashboard/All Commands\|📚 Все команды]] | Полный список |
-| [[README\|📖 Документация]] | Справка |
-| [[SETUP\|⚙️ Настройки]] | Конфигурация |
+| [[_Templates/Command\|Создать команду]] | Новый сниппет |
+| [[_Dashboard/All Commands\|Все команды]] | Полный список |
+| [[README\|Документация]] | Справка |
+| [[SETUP\|Настройки]] | Конфигурация |

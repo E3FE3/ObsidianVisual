@@ -1,76 +1,132 @@
 /* =============================================
-   LAUNCHER - Design Tokens & Variables
-   Professional Design System
+   LAUNCHER - Apple Music Design System
+   Dark Theme with Fire Orange Accent
+   Professional & Elegant
    ============================================= */
 
 body {
-  /* === COLORS === */
-  --launcher-accent: #6366f1;
-  --launcher-accent-hover: #4f46e5;
-  --launcher-accent-subtle: rgba(99, 102, 241, 0.1);
-  
-  /* Backgrounds */
-  --launcher-bg-primary: var(--background-primary);
-  --launcher-bg-secondary: var(--background-secondary);
-  --launcher-bg-tertiary: var(--background-secondary-alt);
-  --launcher-bg-hover: rgba(99, 102, 241, 0.05);
-  --launcher-bg-card: var(--background-secondary);
-  
-  /* Borders */
-  --launcher-border: var(--background-modifier-border);
-  --launcher-border-subtle: rgba(128, 128, 128, 0.1);
-  --launcher-border-hover: var(--launcher-accent);
-  
-  /* Text */
-  --launcher-text: var(--text-normal);
-  --launcher-text-muted: var(--text-muted);
-  --launcher-text-faint: var(--text-faint);
-  
+  /* === PRIMARY COLORS === */
+  /* Fire Orange - warm, not neon (Apple Music style) */
+  --launcher-accent: #E85D3D;
+  --launcher-accent-hover: #FF6B4A;
+  --launcher-accent-subtle: rgba(232, 93, 61, 0.08);
+  --launcher-accent-glow: rgba(232, 93, 61, 0.2);
+
+  /* === BACKGROUNDS === */
+  /* Apple Music style dark backgrounds */
+  --launcher-bg-primary: #1A1A1A;
+  --launcher-bg-secondary: #252525;
+  --launcher-bg-tertiary: #2C2C2C;
+  --launcher-bg-elevated: #2A2A2A;
+  --launcher-bg-hover: rgba(255, 255, 255, 0.03);
+  --launcher-bg-card: #252525;
+
+  /* Glassmorphism blur effect */
+  --launcher-bg-glass: rgba(37, 37, 37, 0.7);
+  --launcher-bg-glass-hover: rgba(47, 47, 47, 0.8);
+
+  /* === BORDERS === */
+  /* Subtle lines like Apple Music */
+  --launcher-border: rgba(255, 255, 255, 0.08);
+  --launcher-border-subtle: rgba(255, 255, 255, 0.04);
+  --launcher-border-medium: rgba(255, 255, 255, 0.12);
+  --launcher-border-hover: rgba(255, 87, 34, 0.3);
+  --launcher-border-focus: var(--launcher-accent);
+
+  /* === TEXT === */
+  /* High contrast white text on dark */
+  --launcher-text: #FFFFFF;
+  --launcher-text-secondary: #B3B3B3;
+  --launcher-text-muted: #8E8E93;
+  --launcher-text-faint: #666666;
+
   /* === STATUS COLORS === */
-  --launcher-success: #10b981;
-  --launcher-info: #3b82f6;
-  --launcher-warning: #f59e0b;
-  --launcher-danger: #ef4444;
-  --launcher-purple: #8b5cf6;
-  --launcher-pink: #ec4899;
-  --launcher-cyan: #06b6d4;
-  
-  /* System Colors */
-  --launcher-windows: #0078d4;
-  --launcher-linux: #e95420;
-  --launcher-server: #6366f1;
-  
+  /* Subtle, not bright */
+  --launcher-success: #30D158;
+  --launcher-info: #0A84FF;
+  --launcher-warning: #FF9F0A;
+  --launcher-danger: #FF453A;
+
+  /* === SYSTEM COLORS === */
+  --launcher-windows: #0078D4;
+  --launcher-linux: #FF6B35;
+  --launcher-server: #FF5722;
+
   /* === SPACING === */
-  --launcher-gap-xs: 0.25rem;
-  --launcher-gap-sm: 0.5rem;
-  --launcher-gap-md: 1rem;
-  --launcher-gap-lg: 1.5rem;
-  --launcher-gap-xl: 2rem;
-  
+  /* Apple-like generous spacing */
+  --launcher-gap-2xs: 0.125rem;  /* 2px */
+  --launcher-gap-xs: 0.25rem;    /* 4px */
+  --launcher-gap-sm: 0.5rem;     /* 8px */
+  --launcher-gap-md: 0.75rem;    /* 12px */
+  --launcher-gap-lg: 1rem;       /* 16px */
+  --launcher-gap-xl: 1.5rem;     /* 24px */
+  --launcher-gap-2xl: 2rem;      /* 32px */
+
   /* === BORDER RADIUS === */
-  --launcher-radius-xs: 3px;
-  --launcher-radius-sm: 4px;
-  --launcher-radius-md: 6px;
-  --launcher-radius-lg: 8px;
+  /* Apple-style rounded corners */
+  --launcher-radius-xs: 4px;
+  --launcher-radius-sm: 6px;
+  --launcher-radius-md: 8px;
+  --launcher-radius-lg: 10px;
   --launcher-radius-xl: 12px;
-  
+  --launcher-radius-2xl: 16px;
+
   /* === SHADOWS === */
-  --launcher-shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.05);
-  --launcher-shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
-  --launcher-shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
-  --launcher-shadow-hover: 0 8px 25px -5px rgba(99, 102, 241, 0.15);
-  
+  /* Subtle shadows like Apple Music */
+  --launcher-shadow-xs: 0 1px 2px rgba(0, 0, 0, 0.3);
+  --launcher-shadow-sm: 0 2px 4px rgba(0, 0, 0, 0.3);
+  --launcher-shadow-md: 0 4px 8px rgba(0, 0, 0, 0.4);
+  --launcher-shadow-lg: 0 8px 16px rgba(0, 0, 0, 0.5);
+  --launcher-shadow-xl: 0 12px 24px rgba(0, 0, 0, 0.6);
+
+  /* Glow for accent elements */
+  --launcher-shadow-accent: 0 4px 12px var(--launcher-accent-glow);
+  --launcher-shadow-accent-lg: 0 8px 24px var(--launcher-accent-glow);
+
   /* === TRANSITIONS === */
-  --launcher-transition-fast: 0.1s ease;
-  --launcher-transition: 0.15s ease;
-  --launcher-transition-slow: 0.25s ease;
-  
+  /* Apple-like smooth animations */
+  --launcher-transition-fast: 0.15s cubic-bezier(0.4, 0, 0.2, 1);
+  --launcher-transition: 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+  --launcher-transition-slow: 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  --launcher-transition-bounce: 0.4s cubic-bezier(0.34, 1.56, 0.64, 1);
+
   /* === TYPOGRAPHY === */
-  --launcher-font-mono: ui-monospace, SFMono-Regular, "SF Mono", Menlo, Consolas, monospace;
-  --launcher-font-size-xs: 0.65rem;
-  --launcher-font-size-sm: 0.75rem;
-  --launcher-font-size-base: 0.85rem;
-  --launcher-font-size-lg: 0.95rem;
-  --launcher-font-size-xl: 1.1rem;
-  --launcher-font-size-2xl: 1.25rem;
+  /* SF Pro inspired fonts */
+  --launcher-font-sans: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  --launcher-font-mono: "SF Mono", ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+
+  /* Font sizes - Apple Music scale */
+  --launcher-font-2xs: 0.6875rem;  /* 11px */
+  --launcher-font-xs: 0.75rem;     /* 12px */
+  --launcher-font-sm: 0.8125rem;   /* 13px */
+  --launcher-font-base: 0.875rem;  /* 14px */
+  --launcher-font-md: 0.9375rem;   /* 15px */
+  --launcher-font-lg: 1rem;        /* 16px */
+  --launcher-font-xl: 1.125rem;    /* 18px */
+  --launcher-font-2xl: 1.5rem;     /* 24px */
+  --launcher-font-3xl: 2rem;       /* 32px */
+
+  /* Font weights - Apple style */
+  --launcher-weight-regular: 400;
+  --launcher-weight-medium: 500;
+  --launcher-weight-semibold: 600;
+  --launcher-weight-bold: 700;
+
+  /* Line heights */
+  --launcher-leading-tight: 1.2;
+  --launcher-leading-normal: 1.5;
+  --launcher-leading-relaxed: 1.7;
+
+  /* === BLUR === */
+  /* Glassmorphism blur values */
+  --launcher-blur-sm: blur(8px);
+  --launcher-blur-md: blur(12px);
+  --launcher-blur-lg: blur(20px);
+
+  /* === Z-INDEX === */
+  --launcher-z-base: 1;
+  --launcher-z-dropdown: 10;
+  --launcher-z-overlay: 20;
+  --launcher-z-modal: 30;
+  --launcher-z-toast: 40;
 }

@@ -1,4 +1,4 @@
-# 🐧 WSL
+# :LiTerminal: WSL
 
 Ubuntu в Windows Subsystem for Linux.
 
@@ -15,6 +15,6 @@ SORT file.name ASC
 ```
 
 ## Связанные
-- [[_Dashboard/Home|🏠 На главную]]
-- [[Systems/WINDOWS/Windows|🪟 Windows]]
-- [[Systems/VPS/VPS|🌐 VPS]]
+- [[_Dashboard/Home|:LiHome: На главную]]
+- [[Systems/WINDOWS/Windows|:LiMonitor: Windows]]
+- [[Systems/VPS/VPS|:LiGlobe: VPS]]

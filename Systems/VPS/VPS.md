@@ -1,4 +1,4 @@
-# 🌐 VPS
+# :LiGlobe: VPS
 
 Инфраструктура виртуальных частных серверов.
 
@@ -6,8 +6,8 @@
 Команды и конфигурации для управления удалёнными VPS серверами.
 
 ## Серверы
-- [[The Yvn Hub/TheYvnHub|🌐 TheYvnHub]] - Инфраструктурный сервер (Plane, n8n, Gitea)
-- [[The Yvn AI/TheYvnAI|🌐 TheYvnAI]] - AI сервер (Ollama, LiteLLM)
+- [[The Yvn Hub/TheYvnHub|:LiGlobe: TheYvnHub]] - Инфраструктурный сервер (Plane, n8n, Gitea)
+- [[The Yvn AI/TheYvnAI|:LiGlobe: TheYvnAI]] - AI сервер (Ollama, LiteLLM)
 
 ## Все команды VPS
 
@@ -19,6 +19,6 @@ SORT system ASC, file.name ASC
 ```
 
 ## Связанные
-- [[_Dashboard/Home|🏠 На главную]]
-- [[Systems/WINDOWS/Windows|🪟 Windows]]
-- [[Systems/WSL/WSL|🐧 WSL]]
+- [[_Dashboard/Home|:LiHome: На главную]]
+- [[Systems/WINDOWS/Windows|:LiMonitor: Windows]]
+- [[Systems/WSL/WSL|:LiTerminal: WSL]]

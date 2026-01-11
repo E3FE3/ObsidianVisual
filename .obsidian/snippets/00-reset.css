@@ -1,8 +1,39 @@
 /* =============================================
-   GLOBAL RESET - Normalize Obsidian defaults
+   GLOBAL RESET & OBSIDIAN OVERRIDES
+   Override default Obsidian purple with Fire Orange
    ============================================= */
 
-/* Remove browser defaults */
+/* === OVERRIDE OBSIDIAN BASE COLORS === */
+body {
+  /* Replace purple interactive colors with fire orange */
+  --interactive-accent: var(--launcher-accent) !important;
+  --interactive-accent-hover: var(--launcher-accent-hover) !important;
+  --link-color: var(--launcher-text) !important;
+  --link-color-hover: var(--launcher-accent) !important;
+  --link-unresolved-color: var(--launcher-text-muted) !important;
+
+  /* Background overrides for consistency */
+  --background-primary: var(--launcher-bg-primary) !important;
+  --background-secondary: var(--launcher-bg-secondary) !important;
+  --background-secondary-alt: var(--launcher-bg-tertiary) !important;
+
+  /* Text overrides */
+  --text-normal: var(--launcher-text) !important;
+  --text-muted: var(--launcher-text-secondary) !important;
+  --text-faint: var(--launcher-text-muted) !important;
+
+  /* Border overrides */
+  --background-modifier-border: var(--launcher-border) !important;
+  --background-modifier-border-hover: var(--launcher-border-hover) !important;
+  --background-modifier-border-focus: var(--launcher-border-focus) !important;
+
+  /* CRITICAL: Remove purple/blue hover backgrounds */
+  --background-modifier-hover: var(--launcher-bg-hover) !important;
+  --background-modifier-active-hover: var(--launcher-bg-hover) !important;
+  --background-modifier-cover: var(--launcher-bg-hover) !important;
+}
+
+/* === RESET DEFAULTS === */
 * {
   margin: 0;
   padding: 0;
@@ -11,7 +42,8 @@
 
 /* Fix line height */
 body, html {
-  line-height: 1.5;
+  line-height: var(--launcher-leading-normal);
+  font-family: var(--launcher-font-sans);
 }
 
 /* Normalize images */
@@ -20,8 +52,50 @@ img {
   height: auto;
 }
 
-/* Better focus states */
+/* Better focus states with fire orange */
 :focus-visible {
-  outline: 2px solid var(--interactive-accent);
+  outline: 2px solid var(--launcher-accent) !important;
   outline-offset: 2px;
+}
+
+/* Remove purple hover from links */
+a {
+  color: var(--launcher-text) !important;
+  text-decoration: none !important;
+  transition: color var(--launcher-transition-fast) !important;
+}
+
+a:hover {
+  color: var(--launcher-accent) !important;
+}
+
+/* Internal links - fire orange on hover */
+.internal-link {
+  color: var(--launcher-text) !important;
+  border-bottom: 1px solid transparent !important;
+  transition: all var(--launcher-transition-fast) !important;
+}
+
+.internal-link:hover {
+  color: var(--launcher-accent) !important;
+  border-bottom-color: var(--launcher-accent) !important;
+}
+
+/* Remove purple from buttons */
+button,
+.clickable-icon {
+  color: var(--launcher-text-secondary) !important;
+  transition: color var(--launcher-transition-fast) !important;
+}
+
+button:hover,
+.clickable-icon:hover {
+  color: var(--launcher-accent) !important;
+  background: var(--launcher-bg-hover) !important;
+}
+
+/* Remove purple from selection */
+::selection {
+  background: var(--launcher-accent-subtle) !important;
+  color: var(--launcher-text) !important;
 }

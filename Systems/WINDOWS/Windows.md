@@ -1,4 +1,4 @@
-# 🪟 WINDOWS
+# :LiMonitor: WINDOWS
 
 Команды и конфигурации для локального Windows PC.
 
@@ -15,6 +15,6 @@ SORT file.name ASC
 ```
 
 ## Связанные
-- [[_Dashboard/Home|🏠 На главную]]
-- [[Systems/WSL/WSL|🐧 WSL]]
-- [[Systems/VPS/VPS|🌐 VPS]]
+- [[_Dashboard/Home|:LiHome: На главную]]
+- [[Systems/WSL/WSL|:LiTerminal: WSL]]
+- [[Systems/VPS/VPS|:LiGlobe: VPS]]
