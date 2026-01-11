@@ -31,7 +31,7 @@
 /* Add icons before internal links in tables */
 
 /* Monitor - Windows */
-.internal-link[href*="Windows"]::before {
+.internal-link[href*="WINDOWS"]::before {
   content: '' !important;
   display: inline-block !important;
   width: 1.2em !important;
