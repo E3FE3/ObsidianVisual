@@ -21,16 +21,13 @@ cssclasses:
 
 ## Недавние команды
 
-```dataview
-TABLE WITHOUT ID
-  file.link AS "Команда",
-  system AS "Система",
-  description AS "Описание"
-FROM "Snippets" OR "Scripts"
-WHERE file.name != "Home" AND file.name != "All Commands"
-SORT created DESC
-LIMIT 5
-```
+| Name | Description |
+|------|-------------|
+| [[Snippets/Check Database Status\|🔍 Check Database Status]] | Проверка статуса баз данных |
+| [[Snippets/Check Disk Space\|💾 Check Disk Space]] | Проверка дискового пространства |
+| [[Snippets/Check LiteLLM Status\|🤖 Check LiteLLM Status]] | Статус LiteLLM прокси |
+| [[Snippets/Check Ollama Status\|🧠 Check Ollama Status]] | Статус сервиса Ollama |
+| [[Snippets/Check System Performance\|📊 Check System Performance]] | Мониторинг CPU и RAM |
 
 ---
 
