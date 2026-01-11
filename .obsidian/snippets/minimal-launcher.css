@@ -1,8 +1,13 @@
 /* =============================================
-   LAUNCHER - Modern Dashboard for Minimal Theme
+   LAUNCHER - App-Like Dashboard
+   Linear / Notion / Vercel Style
    ============================================= */
 
-/* === HIDE UNWANTED ELEMENTS === */
+/* ============================================
+   SECTION 1: GLOBAL APP SHELL
+   ============================================ */
+
+/* Hide Obsidian chrome for app-like feel */
 .cards .metadata-container,
 .cards .metadata-properties,
 .cards .inline-title,
@@ -10,15 +15,19 @@
   display: none !important;
 }
 
-/* === PAGE LAYOUT === */
+/* Full-width app container */
 .cards .markdown-preview-view {
-  padding: 1.5rem 2rem !important;
+  padding: 0 !important;
   max-width: 100% !important;
   width: 100% !important;
   overflow: visible !important;
+  background: var(--launcher-bg-primary) !important;
 }
 
 .cards .markdown-preview-sizer {
+  padding: 2.5rem 3rem !important;
+  max-width: 1400px !important;
+  margin: 0 auto !important;
   overflow: visible !important;
 }
 
@@ -26,37 +35,63 @@
   overflow: visible !important;
 }
 
-/* === TITLE === */
+/* ============================================
+   SECTION 2: APP HEADER / TITLE
+   ============================================ */
+
 .cards h1 {
-  font-size: 1.25rem !important;
-  font-weight: 600 !important;
-  margin-bottom: 2rem !important;
-  padding-bottom: 0 !important;
-  border-bottom: none !important;
-  color: var(--text-normal) !important;
+  font-size: var(--launcher-font-size-2xl) !important;
+  font-weight: 700 !important;
+  letter-spacing: -0.025em !important;
+  margin-bottom: 2.5rem !important;
+  padding-bottom: 1.5rem !important;
+  border-bottom: 1px solid var(--launcher-border-subtle) !important;
+  color: var(--launcher-text) !important;
+  display: flex !important;
+  align-items: center !important;
+  gap: 0.75rem !important;
 }
 
-/* === SECTION HEADERS === */
+/* ============================================
+   SECTION 3: SECTION HEADERS (Linear-style)
+   ============================================ */
+
 .cards h2 {
-  font-size: 0.65rem !important;
+  font-size: var(--launcher-font-size-xs) !important;
   font-weight: 600 !important;
   text-transform: uppercase !important;
-  letter-spacing: 0.12em !important;
-  color: var(--text-faint) !important;
-  margin-top: 2rem !important;
-  margin-bottom: 0.75rem !important;
+  letter-spacing: 0.1em !important;
+  color: var(--launcher-text-faint) !important;
+  margin-top: 2.5rem !important;
+  margin-bottom: 1rem !important;
+  padding: 0 !important;
   border-bottom: none !important;
+  display: flex !important;
+  align-items: center !important;
+  gap: 0.5rem !important;
 }
 
-/* === TABLES AS CARDS === */
+.cards h2::before {
+  content: "" !important;
+  display: inline-block !important;
+  width: 3px !important;
+  height: 12px !important;
+  background: var(--launcher-accent) !important;
+  border-radius: 2px !important;
+}
+
+/* ============================================
+   SECTION 4: SYSTEM CARDS (Grid)
+   ============================================ */
+
 .cards table:not(.dataview) {
   display: grid !important;
-  grid-template-columns: repeat(auto-fill, minmax(180px, 1fr)) !important;
-  gap: 0.75rem !important;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)) !important;
+  gap: 1rem !important;
   border: none !important;
   background: transparent !important;
   width: 100% !important;
-  padding-top: 4px !important;
+  padding: 0.5rem 0 !important;
   overflow: visible !important;
 }
 
@@ -68,82 +103,125 @@
   display: contents !important;
 }
 
+/* Individual Card */
 .cards table:not(.dataview) tr {
   display: flex !important;
   flex-direction: column !important;
-  background: var(--background-secondary) !important;
-  border: 1px solid var(--background-modifier-border) !important;
-  border-radius: 8px !important;
-  padding: 1rem !important;
-  transition: all 0.15s ease !important;
+  background: var(--launcher-bg-card) !important;
+  border: 1px solid var(--launcher-border) !important;
+  border-radius: var(--launcher-radius-xl) !important;
+  padding: 1.25rem 1.5rem !important;
+  transition: all var(--launcher-transition) !important;
+  cursor: pointer !important;
+  position: relative !important;
+}
+
+.cards table:not(.dataview) tr::before {
+  content: "" !important;
+  position: absolute !important;
+  left: 0 !important;
+  top: 50% !important;
+  transform: translateY(-50%) !important;
+  width: 4px !important;
+  height: 40% !important;
+  background: var(--launcher-accent) !important;
+  border-radius: 0 4px 4px 0 !important;
+  opacity: 0 !important;
+  transition: all var(--launcher-transition) !important;
 }
 
 .cards table:not(.dataview) tr:hover {
-  border-color: var(--interactive-accent) !important;
-  transform: translateY(-2px) !important;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08) !important;
+  border-color: var(--launcher-border-hover) !important;
+  background: var(--launcher-bg-hover) !important;
+  transform: translateY(-3px) !important;
+  box-shadow: var(--launcher-shadow-hover) !important;
 }
 
+.cards table:not(.dataview) tr:hover::before {
+  opacity: 1 !important;
+  height: 60% !important;
+}
+
+/* Card cells */
 .cards table:not(.dataview) td {
   padding: 0 !important;
   border: none !important;
   background: transparent !important;
 }
 
+/* Card Title (first cell) */
 .cards table:not(.dataview) td:first-child {
   font-weight: 600 !important;
-  font-size: 0.9rem !important;
-  margin-bottom: 0.25rem !important;
+  font-size: var(--launcher-font-size-lg) !important;
+  margin-bottom: 0.5rem !important;
+  color: var(--launcher-text) !important;
 }
 
+/* Card Description (last cell) */
 .cards table:not(.dataview) td:last-child {
-  font-size: 0.8rem !important;
-  color: var(--text-muted) !important;
-  line-height: 1.4 !important;
+  font-size: var(--launcher-font-size-sm) !important;
+  color: var(--launcher-text-muted) !important;
+  line-height: 1.5 !important;
 }
 
-/* === LINKS IN CARDS === */
+/* ============================================
+   SECTION 5: LINKS IN CARDS
+   ============================================ */
+
 .cards table:not(.dataview) .internal-link {
-  color: var(--text-normal) !important;
+  color: var(--launcher-text) !important;
   text-decoration: none !important;
+  transition: color var(--launcher-transition-fast) !important;
 }
 
 .cards table:not(.dataview) .internal-link:hover {
-  color: var(--interactive-accent) !important;
+  color: var(--launcher-accent) !important;
 }
 
-/* Hide link icons */
+/* Hide link icons globally */
 .cards .internal-link svg,
 .cards .internal-link .link-icon {
   display: none !important;
 }
 
-/* === DATAVIEW TABLES === */
+/* ============================================
+   SECTION 6: DATAVIEW TABLES (App-style)
+   ============================================ */
+
 .cards .dataview.table-view-table {
-  border: 1px solid var(--background-modifier-border) !important;
-  border-radius: 8px !important;
+  border: 1px solid var(--launcher-border) !important;
+  border-radius: var(--launcher-radius-xl) !important;
   overflow: hidden !important;
-  font-size: 0.8rem !important;
+  font-size: var(--launcher-font-size-base) !important;
   width: 100% !important;
+  background: var(--launcher-bg-card) !important;
 }
 
+/* Table Header */
 .cards .dataview.table-view-table thead {
-  background: var(--background-secondary) !important;
+  background: var(--launcher-bg-tertiary) !important;
 }
 
 .cards .dataview.table-view-table th {
-  font-size: 0.65rem !important;
+  font-size: var(--launcher-font-size-xs) !important;
   font-weight: 600 !important;
   text-transform: uppercase !important;
-  letter-spacing: 0.05em !important;
-  color: var(--text-faint) !important;
-  padding: 0.6rem 0.75rem !important;
-  border-bottom: 1px solid var(--background-modifier-border) !important;
+  letter-spacing: 0.08em !important;
+  color: var(--launcher-text-faint) !important;
+  padding: 0.875rem 1rem !important;
+  border-bottom: 1px solid var(--launcher-border) !important;
+  text-align: left !important;
 }
 
+/* Table Rows */
 .cards .dataview.table-view-table td {
-  padding: 0.5rem 0.75rem !important;
-  border-bottom: 1px solid var(--background-modifier-border-faint) !important;
+  padding: 0.875rem 1rem !important;
+  border-bottom: 1px solid var(--launcher-border-subtle) !important;
+  vertical-align: middle !important;
+}
+
+.cards .dataview.table-view-table tbody tr {
+  transition: background var(--launcher-transition-fast) !important;
 }
 
 .cards .dataview.table-view-table tbody tr:last-child td {
@@ -151,12 +229,70 @@
 }
 
 .cards .dataview.table-view-table tbody tr:hover {
-  background: var(--background-secondary-alt) !important;
+  background: var(--launcher-bg-hover) !important;
 }
 
-/* === HORIZONTAL RULES === */
+/* Links in Dataview */
+.cards .dataview.table-view-table .internal-link {
+  color: var(--launcher-accent) !important;
+  font-weight: 500 !important;
+}
+
+.cards .dataview.table-view-table .internal-link:hover {
+  text-decoration: underline !important;
+}
+
+/* ============================================
+   SECTION 7: QUICK ACTIONS (Button-like)
+   ============================================ */
+
+/* Quick actions table - horizontal layout */
+.cards h2:has(+ table:not(.dataview)) + table:not(.dataview) {
+  grid-template-columns: repeat(auto-fill, minmax(140px, 1fr)) !important;
+}
+
+.cards h2:has(+ table:not(.dataview)) + table:not(.dataview) tr {
+  padding: 0.875rem 1rem !important;
+  text-align: center !important;
+  align-items: center !important;
+  justify-content: center !important;
+}
+
+.cards h2:has(+ table:not(.dataview)) + table:not(.dataview) td:first-child {
+  font-size: var(--launcher-font-size-base) !important;
+  margin-bottom: 0 !important;
+}
+
+.cards h2:has(+ table:not(.dataview)) + table:not(.dataview) td:last-child {
+  display: none !important;
+}
+
+/* ============================================
+   SECTION 8: HORIZONTAL RULES (Subtle dividers)
+   ============================================ */
+
 .cards hr {
   border: none !important;
-  margin: 1.5rem 0 !important;
-  opacity: 0 !important;
+  height: 1px !important;
+  background: var(--launcher-border-subtle) !important;
+  margin: 2rem 0 !important;
+  opacity: 0.5 !important;
+}
+
+/* ============================================
+   SECTION 9: RESPONSIVE DESIGN
+   ============================================ */
+
+@media (max-width: 768px) {
+  .cards .markdown-preview-sizer {
+    padding: 1.5rem !important;
+  }
+  
+  .cards table:not(.dataview) {
+    grid-template-columns: 1fr !important;
+  }
+  
+  .cards h1 {
+    font-size: var(--launcher-font-size-xl) !important;
+  }
 }

@@ -1,36 +1,76 @@
 /* =============================================
    LAUNCHER - Design Tokens & Variables
+   Professional Design System
    ============================================= */
 
 body {
-  /* Colors */
-  --launcher-accent: var(--interactive-accent);
-  --launcher-accent-hover: var(--interactive-accent-hover);
+  /* === COLORS === */
+  --launcher-accent: #6366f1;
+  --launcher-accent-hover: #4f46e5;
+  --launcher-accent-subtle: rgba(99, 102, 241, 0.1);
+  
+  /* Backgrounds */
   --launcher-bg-primary: var(--background-primary);
   --launcher-bg-secondary: var(--background-secondary);
-  --launcher-bg-hover: var(--background-secondary-alt);
+  --launcher-bg-tertiary: var(--background-secondary-alt);
+  --launcher-bg-hover: rgba(99, 102, 241, 0.05);
+  --launcher-bg-card: var(--background-secondary);
+  
+  /* Borders */
   --launcher-border: var(--background-modifier-border);
-  --launcher-border-hover: var(--interactive-accent);
+  --launcher-border-subtle: rgba(128, 128, 128, 0.1);
+  --launcher-border-hover: var(--launcher-accent);
+  
+  /* Text */
   --launcher-text: var(--text-normal);
   --launcher-text-muted: var(--text-muted);
   --launcher-text-faint: var(--text-faint);
   
-  /* Status Colors */
-  --launcher-success: var(--color-green);
-  --launcher-info: var(--color-blue);
-  --launcher-warning: var(--color-orange);
-  --launcher-danger: var(--color-red);
+  /* === STATUS COLORS === */
+  --launcher-success: #10b981;
+  --launcher-info: #3b82f6;
+  --launcher-warning: #f59e0b;
+  --launcher-danger: #ef4444;
+  --launcher-purple: #8b5cf6;
+  --launcher-pink: #ec4899;
+  --launcher-cyan: #06b6d4;
   
-  /* Spacing */
+  /* System Colors */
+  --launcher-windows: #0078d4;
+  --launcher-linux: #e95420;
+  --launcher-server: #6366f1;
+  
+  /* === SPACING === */
+  --launcher-gap-xs: 0.25rem;
   --launcher-gap-sm: 0.5rem;
   --launcher-gap-md: 1rem;
   --launcher-gap-lg: 1.5rem;
+  --launcher-gap-xl: 2rem;
   
-  /* Border Radius */
+  /* === BORDER RADIUS === */
+  --launcher-radius-xs: 3px;
   --launcher-radius-sm: 4px;
   --launcher-radius-md: 6px;
   --launcher-radius-lg: 8px;
+  --launcher-radius-xl: 12px;
   
-  /* Transitions */
+  /* === SHADOWS === */
+  --launcher-shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.05);
+  --launcher-shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+  --launcher-shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+  --launcher-shadow-hover: 0 8px 25px -5px rgba(99, 102, 241, 0.15);
+  
+  /* === TRANSITIONS === */
+  --launcher-transition-fast: 0.1s ease;
   --launcher-transition: 0.15s ease;
+  --launcher-transition-slow: 0.25s ease;
+  
+  /* === TYPOGRAPHY === */
+  --launcher-font-mono: ui-monospace, SFMono-Regular, "SF Mono", Menlo, Consolas, monospace;
+  --launcher-font-size-xs: 0.65rem;
+  --launcher-font-size-sm: 0.75rem;
+  --launcher-font-size-base: 0.85rem;
+  --launcher-font-size-lg: 0.95rem;
+  --launcher-font-size-xl: 1.1rem;
+  --launcher-font-size-2xl: 1.25rem;
 }
