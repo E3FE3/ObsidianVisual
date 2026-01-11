@@ -38,14 +38,14 @@
 
 .callout-title-inner {
   font-weight: 600 !important;
-  color: var(--text-normal) !important;
+  color: var(--launcher-text) !important;
 }
 
 /* Callout content - compact */
 .callout-content {
   padding: 0 0.75rem 0.5rem 0.75rem !important;
   font-size: 0.8rem !important;
-  color: var(--text-muted) !important;
+  color: var(--launcher-text-secondary) !important;
 }
 
 .callout-content p {

@@ -25,11 +25,11 @@
 /* Button-style links using bold syntax **[[link|text]]** */
 .markdown-preview-view strong a.internal-link {
   display: inline-block !important;
-  background: var(--background-secondary) !important;
-  border: 1px solid var(--background-modifier-border) !important;
+  background: var(--launcher-bg-secondary) !important;
+  border: 1px solid var(--launcher-border) !important;
   border-radius: 4px !important;
   padding: 0.35rem 0.7rem !important;
-  color: var(--text-normal) !important;
+  color: var(--launcher-text) !important;
   text-decoration: none !important;
   font-weight: 500 !important;
   font-size: 0.8rem !important;
@@ -37,7 +37,7 @@
 }
 
 .markdown-preview-view strong a.internal-link:hover {
-  background: var(--background-secondary-alt) !important;
+  background: var(--launcher-bg-tertiary) !important;
   border-color: var(--interactive-accent) !important;
   text-decoration: none !important;
 }

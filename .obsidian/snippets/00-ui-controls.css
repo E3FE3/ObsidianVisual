@@ -117,5 +117,5 @@ button.mod-cta:hover {
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: var(--text-faint);
+  background: var(--launcher-text-muted);
 }

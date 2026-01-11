@@ -9,14 +9,14 @@
   letter-spacing: -0.02em !important;
   margin-bottom: 1.5rem !important;
   padding-bottom: 0.5rem !important;
-  border-bottom: 1px solid var(--background-modifier-border) !important;
+  border-bottom: 1px solid var(--launcher-border) !important;
 }
 
 /* H2 - Section headers */
 .markdown-preview-view h2 {
   font-size: 0.85rem !important;
   font-weight: 600 !important;
-  color: var(--text-muted) !important;
+  color: var(--launcher-text-secondary) !important;
   text-transform: uppercase !important;
   letter-spacing: 0.05em !important;
   margin-top: 2rem !important;
