@@ -10,9 +10,19 @@
 
 .markdown-preview-view .internal-link:hover {
   text-decoration: none !important;
+  border-bottom: 1px solid var(--interactive-accent) !important;
+  padding-bottom: 1px !important;
 }
 
-/* Don't hide SVG icons - keep them visible */
+/* Hide file icons before links */
+.markdown-preview-view .internal-link::before {
+  display: none !important;
+}
+
+/* Hide file icons before links */
+.markdown-preview-view .internal-link::before {
+  display: none !important;
+}
 
 /* External links */
 .markdown-preview-view .external-link {

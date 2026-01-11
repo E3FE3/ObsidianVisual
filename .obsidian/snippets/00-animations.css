@@ -9,7 +9,7 @@ a, button, .clickable, .interactive {
 
 /* Hover effects */
 a:hover {
-  text-decoration: none;
+  text-decoration: underline;
 }
 
 button:hover {

@@ -100,24 +100,22 @@ button:hover,
   color: var(--launcher-text) !important;
 }
 
-/* === LINK DECORATION CONTROL === */
-/* Remove all underlines to avoid icon issues */
-body {
-  --link-decoration: none !important;
+/* === MINIMAL THEME LINK CONTROL === */
+/* Remove underlines for Minimal theme */
+body { 
+  --link-decoration: none !important; 
   --link-decoration-hover: none !important;
   --link-external-decoration: none !important;
   --link-external-decoration-hover: none !important;
 }
 
-/* Force remove underlines from ALL links */
-a, a:hover, a:focus, a:active {
+/* Additional Minimal theme specific overrides */
+.minimal-theme .internal-link,
+.minimal-theme .internal-link:hover {
   text-decoration: none !important;
 }
 
-.internal-link, .internal-link:hover, .internal-link:focus, .internal-link:active {
-  text-decoration: none !important;
-}
-
-.external-link, .external-link:hover, .external-link:focus, .external-link:active {
+.minimal-theme .external-link,
+.minimal-theme .external-link:hover {
   text-decoration: none !important;
 }

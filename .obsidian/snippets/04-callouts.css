@@ -60,7 +60,7 @@
 }
 
 .callout-content a:hover {
-  text-decoration: none !important;
+  text-decoration: underline !important;
 }
 
 /* Status callouts - left border accent */
