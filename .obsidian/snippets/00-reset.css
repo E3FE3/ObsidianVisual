@@ -99,3 +99,12 @@ button:hover,
   background: var(--launcher-accent-subtle) !important;
   color: var(--launcher-text) !important;
 }
+
+/* === LINK DECORATION CONTROL === */
+/* Use Obsidian CSS variables for proper link styling */
+body {
+  --link-decoration: none !important;
+  --link-decoration-hover: none !important;
+  --link-external-decoration: none !important;
+  --link-external-decoration-hover: none !important;
+}
