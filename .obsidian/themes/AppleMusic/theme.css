@@ -55,6 +55,119 @@
   /* --- Тени --- */
   --shadow-s: 0 1px 2px rgba(0,0,0,0.3);
   --shadow-l: 0 10px 30px rgba(0,0,0,0.5);
+
+  /* ==========================================================================
+     ПЕРЕМЕННЫЕ ЛАУНЧЕРА (СОВМЕСТИМОСТЬ)
+     Восстанавливаем переменные для работы 08-cards.css и 04-callouts.css
+     ========================================================================== */
+  /* === PRIMARY COLORS === */
+  --launcher-accent: #E85D3D;
+  --launcher-accent-hover: #FF6B4A;
+  --launcher-accent-subtle: rgba(232, 93, 61, 0.08);
+  --launcher-accent-glow: rgba(232, 93, 61, 0.2);
+
+  /* === BACKGROUNDS === */
+  --launcher-bg-primary: #1E1E1E; /* Согласовано с темой */
+  --launcher-bg-secondary: #262626; /* Согласовано с темой */
+  --launcher-bg-tertiary: #2C2C2C; /* Согласовано с темой */
+  --launcher-bg-elevated: #2A2A2A;
+  --launcher-bg-hover: rgba(255, 255, 255, 0.03);
+  --launcher-bg-card: #252525;
+
+  /* Glassmorphism */
+  --launcher-bg-glass: rgba(37, 37, 37, 0.7);
+  --launcher-bg-glass-hover: rgba(47, 47, 47, 0.8);
+
+  /* === BORDERS === */
+  --launcher-border: rgba(255, 255, 255, 0.08);
+  --launcher-border-subtle: rgba(255, 255, 255, 0.04);
+  --launcher-border-medium: rgba(255, 255, 255, 0.12);
+  --launcher-border-hover: rgba(255, 87, 34, 0.3);
+  --launcher-border-focus: var(--launcher-accent);
+
+  /* === TEXT === */
+  --launcher-text: #FFFFFF;
+  --launcher-text-secondary: #B3B3B3;
+  --launcher-text-muted: #8E8E93;
+  --launcher-text-faint: #666666;
+  --launcher-text-inverse: var(--launcher-bg-primary);
+
+  /* === STATUS COLORS === */
+  --launcher-success: #30D158;
+  --launcher-info: #0A84FF;
+  --launcher-warning: #FF9F0A;
+  --launcher-danger: #FF453A;
+  --launcher-windows: #0078D4;
+  --launcher-linux: #FF6B35;
+  --launcher-server: #FF5722;
+
+  /* === SPACING === */
+  --launcher-gap-2xs: 0.125rem;
+  --launcher-gap-xs: 0.25rem;
+  --launcher-gap-sm: 0.5rem;
+  --launcher-gap-md: 0.75rem;
+  --launcher-gap-lg: 1rem;
+  --launcher-gap-xl: 1.5rem;
+  --launcher-gap-2xl: 2rem;
+
+  /* === BORDER RADIUS === */
+  --launcher-radius-xs: 4px;
+  --launcher-radius-sm: 6px;
+  --launcher-radius-md: 8px;
+  --launcher-radius-lg: 10px;
+  --launcher-radius-xl: 12px;
+  --launcher-radius-2xl: 16px;
+
+  /* === SHADOWS === */
+  --launcher-shadow-xs: 0 1px 2px rgba(0, 0, 0, 0.3);
+  --launcher-shadow-sm: 0 2px 4px rgba(0, 0, 0, 0.3);
+  --launcher-shadow-md: 0 4px 8px rgba(0, 0, 0, 0.4);
+  --launcher-shadow-lg: 0 8px 16px rgba(0, 0, 0, 0.5);
+  --launcher-shadow-xl: 0 12px 24px rgba(0, 0, 0, 0.6);
+  --launcher-shadow-accent: 0 4px 12px var(--launcher-accent-glow);
+  --launcher-shadow-accent-lg: 0 8px 24px var(--launcher-accent-glow);
+
+  /* === TRANSITIONS === */
+  --launcher-transition-fast: 0.15s cubic-bezier(0.4, 0, 0.2, 1);
+  --launcher-transition: 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+  --launcher-transition-slow: 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  --launcher-transition-bounce: 0.4s cubic-bezier(0.34, 1.56, 0.64, 1);
+
+  /* === TYPOGRAPHY === */
+  --launcher-font-sans: -apple-system, BlinkMacSystemFont, "SF Pro Display", "SF Pro Text", "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  --launcher-font-mono: "SF Mono", "SF Mono Regular", ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+  --launcher-font-xs: 0.75rem;
+  --launcher-font-sm: 0.875rem;
+  --launcher-font-base: 1rem;
+  --launcher-font-md: 1.125rem;
+  --launcher-font-lg: 1.25rem;
+  --launcher-font-xl: 1.5rem;
+  --launcher-font-2xl: 1.875rem;
+  --launcher-font-3xl: 2.25rem;
+  --launcher-font-caption: var(--launcher-font-xs);
+  --launcher-font-body: var(--launcher-font-base);
+  --launcher-font-body-lg: var(--launcher-font-md);
+  --launcher-font-heading: var(--launcher-font-xl);
+  --launcher-font-display: var(--launcher-font-3xl);
+  --launcher-weight-light: 300;
+  --launcher-weight-regular: 400;
+  --launcher-weight-medium: 500;
+  --launcher-weight-semibold: 600;
+  --launcher-weight-bold: 700;
+  --launcher-weight-heavy: 800;
+  --launcher-leading-tight: 1.25;
+  --launcher-leading-snug: 1.375;
+  --launcher-leading-normal: 1.5;
+  --launcher-leading-relaxed: 1.625;
+  --launcher-leading-loose: 1.75;
+  --launcher-tracking-tight: -0.025em;
+  --launcher-tracking-normal: 0;
+  --launcher-tracking-wide: 0.025em;
+
+  /* === BLUR === */
+  --launcher-blur-sm: blur(8px);
+  --launcher-blur-md: blur(12px);
+  --launcher-blur-lg: blur(20px);
 }
 
 /* ==========================================================================
