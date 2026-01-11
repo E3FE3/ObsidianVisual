@@ -1,0 +1,58 @@
+# Obsidian
+.obsidian/workspace
+.obsidian/workspace.json
+.obsidian/workspace-mobile.json
+
+# Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Linux
+*~
+.fuse_hidden*
+.directory
+.Trash-*
+.nfs*
+
+# Temporary files
+*.tmp
+*.temp
+*.log
+*.swp
+*.swo
+*~
+
+# Cache
+.cache/
+*.cache
+
+# IDE
+.vscode/settings.json
+.idea/
+*.iml
+
+# Sync files (if using Obsidian Sync)
+.obsidian/sync/
+
+# Plugin data (keep plugins but exclude volatile data)
+.obsidian/plugins/*/data.json
+.obsidian/plugins/*/cache/
+.obsidian/plugins/*/logs/
+
+# Exclude local backups
+.obsidian/backups/
+
+# Exclude publish cache
+.obsidian/publish/
+
+# Keep core plugins but exclude their volatile data
+.obsidian/core-plugins.json
+!.obsidian/community-plugins.json
+!.obsidian/plugins/
+!.obsidian/snippets/
