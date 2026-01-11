@@ -59,57 +59,6 @@ img {
 }
 
 /* Remove purple hover from links */
-a {
-  color: var(--launcher-text) !important;
-  text-decoration: none !important;
-  transition: color var(--launcher-transition-fast) !important;
-}
-
-a:hover {
-  color: var(--launcher-accent) !important;
-}
-
-/* Internal links - fire orange on hover */
-.internal-link {
-  color: var(--launcher-text) !important;
-  border-bottom: 1px solid transparent !important;
-  transition: all var(--launcher-transition-fast) !important;
-}
-
-.internal-link:hover {
-  color: var(--launcher-accent) !important;
-  border-bottom-color: var(--launcher-accent) !important;
-}
-
-/* Remove purple from buttons */
-button,
-.clickable-icon {
-  color: var(--launcher-text-secondary) !important;
-  transition: color var(--launcher-transition-fast) !important;
-}
-
-button:hover,
-.clickable-icon:hover {
-  color: var(--launcher-accent) !important;
-  background: var(--launcher-bg-hover) !important;
-}
-
-/* Remove purple from selection */
-::selection {
-  background: var(--launcher-accent-subtle) !important;
-  color: var(--launcher-text) !important;
-}
-
-/* === MINIMAL THEME LINK CONTROL === */
-/* Remove underlines for Minimal theme - AGGRESSIVE APPROACH */
-body { 
-  --link-decoration: none !important; 
-  --link-decoration-hover: none !important;
-  --link-external-decoration: none !important;
-  --link-external-decoration-hover: none !important;
-}
-
-/* Override ALL possible Minimal theme selectors */
 body.minimal-theme a,
 body.minimal-theme a:hover,
 body.minimal-theme a:focus,
@@ -131,4 +80,50 @@ body.minimal-theme a:active,
   text-decoration: none !important;
   border-bottom: none !important;
   box-shadow: none !important;
+  transition: none !important;
+  animation: none !important;
+}
+
+/* Also target mouseout state */
+body.minimal-theme a:not(:hover),
+.minimal-theme .internal-link:not(:hover),
+.minimal-theme .external-link:not(:hover),
+.markdown-preview-view.minimal-theme a:not(:hover),
+.markdown-preview-view.minimal-theme .internal-link:not(:hover) {
+  text-decoration: none !important;
+  border-bottom: none !important;
+  box-shadow: none !important;
+}
+
+/* Internal links - clean without underlines */
+.internal-link {
+  color: var(--launcher-text) !important;
+  text-decoration: none !important;
+  border-bottom: none !important;
+  transition: none !important;
+}
+
+.internal-link:hover {
+  color: var(--launcher-accent) !important;
+  text-decoration: none !important;
+  border-bottom: none !important;
+}
+
+/* Remove purple from buttons */
+button,
+.clickable-icon {
+  color: var(--launcher-text-secondary) !important;
+  transition: color var(--launcher-transition-fast) !important;
+}
+
+button:hover,
+.clickable-icon:hover {
+  color: var(--launcher-accent) !important;
+  background: var(--launcher-bg-hover) !important;
+}
+
+/* Remove purple from selection */
+::selection {
+  background: var(--launcher-accent-subtle) !important;
+  color: var(--launcher-text) !important;
 }
