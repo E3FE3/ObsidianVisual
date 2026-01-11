@@ -2,49 +2,70 @@
    LAUNCHER - Headings & Typography
    ============================================= */
 
-/* H1 - Page title */
+/* H1 - Page title (Display level) */
 .markdown-preview-view h1 {
-  font-size: 1.5rem !important;
-  font-weight: 700 !important;
-  letter-spacing: -0.02em !important;
-  margin-bottom: 1.5rem !important;
-  padding-bottom: 0.5rem !important;
+  font-size: var(--launcher-font-display) !important;  /* 36px */
+  font-weight: var(--launcher-weight-bold) !important;   /* 700 */
+  line-height: var(--launcher-leading-tight) !important; /* 1.25 */
+  letter-spacing: var(--launcher-tracking-tight) !important; /* -0.025em */
+  margin-bottom: var(--launcher-gap-xl) !important;     /* 24px */
+  padding-bottom: var(--launcher-gap-sm) !important;     /* 8px */
   border-bottom: 1px solid var(--launcher-border) !important;
+  color: var(--launcher-text-primary) !important;
 }
 
-/* H2 - Section headers */
+/* H2 - Section headers (Heading level) */
 .markdown-preview-view h2 {
-  font-size: 0.85rem !important;
-  font-weight: 600 !important;
+  font-size: var(--launcher-font-heading) !important;   /* 24px */
+  font-weight: var(--launcher-weight-semibold) !important; /* 600 */
+  line-height: var(--launcher-leading-snug) !important;  /* 1.375 */
   color: var(--launcher-text-secondary) !important;
   text-transform: uppercase !important;
-  letter-spacing: 0.05em !important;
-  margin-top: 2rem !important;
-  margin-bottom: 0.5rem !important;
+  letter-spacing: var(--launcher-tracking-wide) !important; /* 0.025em */
+  margin-top: var(--launcher-gap-2xl) !important;       /* 32px */
+  margin-bottom: var(--launcher-gap-md) !important;      /* 12px */
   padding-bottom: 0 !important;
   border-bottom: none !important;
 }
 
-/* H3 - Subsections */
+/* H3 - Subsections (Large body) */
 .markdown-preview-view h3 {
-  font-size: 1rem !important;
-  font-weight: 600 !important;
-  margin-top: 1.5rem !important;
-  margin-bottom: 0.5rem !important;
+  font-size: var(--launcher-font-lg) !important;          /* 20px */
+  font-weight: var(--launcher-weight-semibold) !important; /* 600 */
+  line-height: var(--launcher-leading-normal) !important; /* 1.5 */
+  letter-spacing: var(--launcher-tracking-normal) !important; /* 0 */
+  margin-top: var(--launcher-gap-xl) !important;         /* 24px */
+  margin-bottom: var(--launcher-gap-sm) !important;      /* 8px */
+  color: var(--launcher-text-primary) !important;
 }
 
-/* H4-H6 */
+/* H4-H6 - Smaller headings */
 .markdown-preview-view h4,
 .markdown-preview-view h5,
 .markdown-preview-view h6 {
-  font-size: 0.9rem !important;
-  font-weight: 600 !important;
-  margin-top: 1rem !important;
-  margin-bottom: 0.5rem !important;
+  font-size: var(--launcher-font-body-lg) !important;     /* 18px */
+  font-weight: var(--launcher-weight-medium) !important;  /* 500 */
+  line-height: var(--launcher-leading-normal) !important; /* 1.5 */
+  margin-top: var(--launcher-gap-lg) !important;         /* 16px */
+  margin-bottom: var(--launcher-gap-sm) !important;      /* 8px */
+  color: var(--launcher-text-primary) !important;
 }
 
-/* Paragraphs */
+/* === BODY TEXT === */
+/* Paragraphs with optimal readability */
 .markdown-preview-view p {
-  line-height: 1.6 !important;
-  margin-bottom: 0.75rem !important;
+  font-size: var(--launcher-font-body) !important;        /* 16px */
+  font-weight: var(--launcher-weight-regular) !important; /* 400 */
+  line-height: var(--launcher-leading-normal) !important; /* 1.5 */
+  margin-bottom: var(--launcher-gap-md) !important;       /* 12px */
+  color: var(--launcher-text-primary) !important;
+}
+
+/* Lists with proper spacing */
+.markdown-preview-view ul,
+.markdown-preview-view ol {
+  font-size: var(--launcher-font-body) !important;        /* 16px */
+  line-height: var(--launcher-leading-normal) !important; /* 1.5 */
+  margin-bottom: var(--launcher-gap-md) !important;       /* 12px */
+  color: var(--launcher-text-primary) !important;
 }

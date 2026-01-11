@@ -91,31 +91,59 @@ body {
   --launcher-transition-bounce: 0.4s cubic-bezier(0.34, 1.56, 0.64, 1);
 
   /* === TYPOGRAPHY === */
-  /* SF Pro inspired fonts */
-  --launcher-font-sans: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
-  --launcher-font-mono: "SF Mono", ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+  /* Professional font stacks based on best practices */
+  --launcher-font-sans: -apple-system, BlinkMacSystemFont, "SF Pro Display", "SF Pro Text", "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  --launcher-font-mono: "SF Mono", "SF Mono Regular", ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
 
-  /* Font sizes - Apple Music scale */
-  --launcher-font-2xs: 0.6875rem;  /* 11px */
-  --launcher-font-xs: 0.75rem;     /* 12px */
-  --launcher-font-sm: 0.8125rem;   /* 13px */
-  --launcher-font-base: 0.875rem;  /* 14px */
-  --launcher-font-md: 0.9375rem;   /* 15px */
-  --launcher-font-lg: 1rem;        /* 16px */
-  --launcher-font-xl: 1.125rem;    /* 18px */
-  --launcher-font-2xl: 1.5rem;     /* 24px */
-  --launcher-font-3xl: 2rem;       /* 32px */
+  /* === MODERN TYPOGRAPHIC SCALE === */
+  /* Based on Apple HIG and modern web standards */
+  /* Mobile-first approach: 16px base for readability */
+  --launcher-font-xs: 0.75rem;      /* 12px - captions, labels */
+  --launcher-font-sm: 0.875rem;     /* 14px - secondary text */
+  --launcher-font-base: 1rem;       /* 16px - body text (optimal for readability) */
+  --launcher-font-md: 1.125rem;      /* 18px - emphasized text */
+  --launcher-font-lg: 1.25rem;       /* 20px - small headings */
+  --launcher-font-xl: 1.5rem;        /* 24px - headings */
+  --launcher-font-2xl: 1.875rem;     /* 30px - large headings */
+  --launcher-font-3xl: 2.25rem;      /* 36px - display headings */
 
-  /* Font weights - Apple style */
-  --launcher-weight-regular: 400;
-  --launcher-weight-medium: 500;
-  --launcher-weight-semibold: 600;
-  --launcher-weight-bold: 700;
+  /* === SEMANTIC FONT SIZES === */
+  /* For specific use cases */
+  --launcher-font-caption: var(--launcher-font-xs);    /* 12px */
+  --launcher-font-body: var(--launcher-font-base);     /* 16px */
+  --launcher-font-body-lg: var(--launcher-font-md);    /* 18px */
+  --launcher-font-heading: var(--launcher-font-xl);    /* 24px */
+  --launcher-font-display: var(--launcher-font-3xl);   /* 36px */
 
-  /* Line heights */
-  --launcher-leading-tight: 1.2;
-  --launcher-leading-normal: 1.5;
-  --launcher-leading-relaxed: 1.7;
+  /* === PROFESSIONAL FONT WEIGHTS === */
+  /* Following Apple's weight system */
+  --launcher-weight-light: 300;      /* For large display text */
+  --launcher-weight-regular: 400;    /* Body text */
+  --launcher-weight-medium: 500;    /* Emphasized text */
+  --launcher-weight-semibold: 600;   /* Headings */
+  --launcher-weight-bold: 700;       /* Strong emphasis */
+  --launcher-weight-heavy: 800;      /* Special cases */
+
+  /* === OPTIMAL LINE HEIGHTS === */
+  /* Based on USWDS and readability research */
+  --launcher-leading-tight: 1.25;    /* Headings, buttons */
+  --launcher-leading-snug: 1.375;   /* Short text */
+  --launcher-leading-normal: 1.5;    /* Body text (optimal for reading) */
+  --launcher-leading-relaxed: 1.625; /* Long-form content */
+  --launcher-leading-loose: 1.75;   /* Special cases */
+
+  /* === LETTER SPACING === */
+  /* Professional tracking for different contexts */
+  --launcher-tracking-tight: -0.025em;  /* Large text */
+  --launcher-tracking-normal: 0;        /* Body text */
+  --launcher-tracking-wide: 0.025em;    /* Small text, uppercase */
+
+  /* === TEXT COLORS === */
+  /* Semantic color naming for better hierarchy */
+  --launcher-text-primary: var(--launcher-text);           /* Main content */
+  --launcher-text-secondary: var(--launcher-text-secondary); /* Supporting text */
+  --launcher-text-tertiary: var(--launcher-text-muted);     /* Captions, disabled */
+  --launcher-text-inverse: var(--launcher-bg-primary);      /* On colored backgrounds */
 
   /* === BLUR === */
   /* Glassmorphism blur values */
