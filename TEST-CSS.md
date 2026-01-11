@@ -2,114 +2,139 @@
 cssclasses: dashboard
 ---
 
-# 🧪 Тест CSS Стилей
+# 🧪 Тест CSS Стилей LAUNCHER 3.0
 
-Если вы видите градиентный header с фиолетовым фоном ниже - CSS работает! ✅
+Этот файл демонстрирует новые возможности обновленного дизайна: Glassmorphism, Mesh Gradients и плавные анимации.
 
 <div class="dashboard-header">
-  <h1>✨ CSS РАБОТАЕТ!</h1>
-  <p class="subtitle">Этот текст должен быть белым на градиентном фоне</p>
+  <h1>✨ LAUNCHER 3.0</h1>
+  <p class="subtitle">Ultra-Modern High-Performance UI</p>
 </div>
 
 ---
 
-## Тест карточек
+## 💎 Эффект Glassmorphism
+Карточки теперь имеют эффект матового стекла, тонкие границы и мягкое свечение.
 
 <div class="dashboard-grid">
-  <div class="card card-success">
+  <div class="card">
     <div class="card-header">
-      <span class="card-icon">✅</span>
-      <h3 class="card-title">Зелёная карточка</h3>
+      <span class="card-icon">💎</span>
+      <h3 class="card-title">Glass Card</h3>
     </div>
     <div class="card-body">
-      <p>Должна быть зелёная левая граница</p>
-      <span class="badge badge-success">Успех</span>
+      <p>Стандартная карточка с эффектом <strong>Glassmorphism</strong> и адаптивным фоном.</p>
+    </div>
+    <div class="card-footer">
+      <span class="badge">Modern</span>
+      <span class="badge">Glass</span>
+    </div>
+  </div>
+
+  <div class="card card-success">
+    <div class="card-header">
+      <span class="card-icon">🚀</span>
+      <h3 class="card-title">Success Glow</h3>
+    </div>
+    <div class="card-body">
+      <p>Карточка со статусом <strong>Success</strong>. Наведите, чтобы увидеть мягкое зеленое свечение.</p>
+    </div>
+    <div class="card-footer">
+      <span class="badge badge-success">Active</span>
     </div>
   </div>
 
   <div class="card card-info">
     <div class="card-header">
-      <span class="card-icon">ℹ️</span>
-      <h3 class="card-title">Синяя карточка</h3>
+      <span class="card-icon">⚡</span>
+      <h3 class="card-title">Interactive UI</h3>
     </div>
     <div class="card-body">
-      <p>Должна быть синяя левая граница</p>
-      <span class="badge badge-info">Инфо</span>
+      <p>Плавные анимации при наведении: карточка приподнимается, иконка слегка вращается.</p>
     </div>
-  </div>
-
-  <div class="card card-warning">
-    <div class="card-header">
-      <span class="card-icon">⚠️</span>
-      <h3 class="card-title">Оранжевая карточка</h3>
-    </div>
-    <div class="card-body">
-      <p>Должна быть оранжевая левая граница</p>
-      <span class="badge badge-warning">Внимание</span>
+    <div class="card-footer">
+      <span class="badge badge-info">Fast</span>
     </div>
   </div>
 </div>
 
 ---
 
-## Тест кнопок
+## 🔘 Современные кнопки
+Кнопки в стиле Linear с улучшенными тенями и состояниями наведения.
 
-<div style="display: flex; gap: 1rem; margin: 1rem 0;">
-  <a href="#" class="btn btn-primary">Градиентная кнопка</a>
-  <a href="#" class="btn btn-outline">Кнопка с обводкой</a>
+<div style="display: flex; gap: 1.5rem; margin: 2rem 0; align-items: center;">
+  <a href="#" class="btn btn-primary">Primary Action</a>
+  <a href="#" class="btn btn-outline">Secondary View</a>
 </div>
 
 ---
 
-## ❌ Если ничего не работает
+## 🎯 Быстрые действия (Tiles)
+Обновленный компактный дизайн для быстрой навигации.
 
-**Проблема**: CSS стили не применяются, всё выглядит как обычный текст.
-
-**Решение**: Нужно включить CSS snippet в настройках Obsidian:
-
-### Шаги для включения CSS:
-
-1. **Откройте Settings** (⚙️ в левом нижнем углу или `Ctrl+,`)
-
-2. **Перейдите в раздел "Appearance"**
-
-3. **Прокрутите вниз до секции "CSS snippets"**
-
-4. **Найдите "dashboard" в списке**
-
-5. **Включите переключатель** (toggle) рядом с "dashboard"
-   - Должен стать синим/фиолетовым
-   - Если не видите "dashboard" - нажмите кнопку обновления (🔄)
-
-6. **ПЕРЕЗАГРУЗИТЕ Obsidian** - это обязательно!
-   - `Ctrl+R` или `View → Reload without saving`
-
-7. **Откройте этот файл снова в Reading Mode**
-   - Нажмите кнопку "Reading view" (📖) в правом верхнем углу
-   - Или `Ctrl+E` чтобы переключиться
-
-### Проверка:
-
-- ✅ **Работает**: Видите фиолетовый градиентный header сверху
-- ✅ **Работает**: Карточки имеют цветные левые границы (зелёная, синяя, оранжевая)
-- ✅ **Работает**: При наведении на карточки они поднимаются (hover effect)
-- ❌ **Не работает**: Всё выглядит как обычный markdown текст
+<div class="quick-actions">
+  <a href="#" class="action-card">
+    <span class="action-icon">🏠</span>
+    <span class="action-title">Home</span>
+  </a>
+  <a href="#" class="action-card">
+    <span class="action-icon">📋</span>
+    <span class="action-title">Tasks</span>
+  </a>
+  <a href="#" class="action-card">
+    <span class="action-icon">⚙️</span>
+    <span class="action-title">Config</span>
+  </a>
+  <a href="#" class="action-card">
+    <span class="action-icon">📊</span>
+    <span class="action-title">Stats</span>
+  </a>
+</div>
 
 ---
 
-## Альтернатива: Ручное включение
+## 📊 Таблицы Dataview
+Улучшенная читаемость и современный вид таблиц.
 
-Если автоматически не появляется в списке:
+<div class="dashboard">
+  <table class="dataview table-view-table">
+    <thead>
+      <tr>
+        <th>Свойство</th>
+        <th>Значение</th>
+        <th>Статус</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Версия дизайна</td>
+        <td>3.0 Platinum</td>
+        <td><span class="badge badge-success">Stable</span></td>
+      </tr>
+      <tr>
+        <td>Glassmorphism</td>
+        <td>Включено (Blur 12px)</td>
+        <td><span class="badge badge-info">Active</span></td>
+      </tr>
+      <tr>
+        <td>Анимации</td>
+        <td>Natural Bezier</td>
+        <td><span class="badge badge-warning">Testing</span></td>
+      </tr>
+    </tbody>
+  </table>
+</div>
 
-1. Убедитесь что файл существует:
-   ```
-   .obsidian/snippets/dashboard.css
-   ```
+---
 
-2. В настройках Obsidian → Appearance → CSS snippets
-   - Нажмите иконку папки 📁 чтобы открыть папку snippets
-   - Проверьте что dashboard.css там есть
+## 🛠️ Если стили не применились
 
-3. Нажмите кнопку обновления (reload snippets)
+1. **Ctrl+R** — принудительная перезагрузка Obsidian.
+2. Проверьте **Settings → Appearance → CSS snippets**, что `dashboard` включен.
+3. Убедитесь, что в YAML файле указано `cssclasses: dashboard`.
 
-4. Перезагрузите Obsidian полностью (закройте и откройте)
+<div class="dashboard-footer">
+  <p>LAUNCHER Professional Dashboard Update</p>
+  <p><a href="#">Вернуться в документацию</a></p>
+</div>
