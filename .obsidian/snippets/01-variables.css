@@ -1,0 +1,36 @@
+/* =============================================
+   LAUNCHER - Design Tokens & Variables
+   ============================================= */
+
+body {
+  /* Colors */
+  --launcher-accent: var(--interactive-accent);
+  --launcher-accent-hover: var(--interactive-accent-hover);
+  --launcher-bg-primary: var(--background-primary);
+  --launcher-bg-secondary: var(--background-secondary);
+  --launcher-bg-hover: var(--background-secondary-alt);
+  --launcher-border: var(--background-modifier-border);
+  --launcher-border-hover: var(--interactive-accent);
+  --launcher-text: var(--text-normal);
+  --launcher-text-muted: var(--text-muted);
+  --launcher-text-faint: var(--text-faint);
+  
+  /* Status Colors */
+  --launcher-success: var(--color-green);
+  --launcher-info: var(--color-blue);
+  --launcher-warning: var(--color-orange);
+  --launcher-danger: var(--color-red);
+  
+  /* Spacing */
+  --launcher-gap-sm: 0.5rem;
+  --launcher-gap-md: 1rem;
+  --launcher-gap-lg: 1.5rem;
+  
+  /* Border Radius */
+  --launcher-radius-sm: 4px;
+  --launcher-radius-md: 6px;
+  --launcher-radius-lg: 8px;
+  
+  /* Transitions */
+  --launcher-transition: 0.15s ease;
+}

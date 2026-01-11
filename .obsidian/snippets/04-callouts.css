@@ -1,0 +1,102 @@
+/* =============================================
+   LAUNCHER - Callouts as Cards
+   ============================================= */
+
+/* Base callout styling */
+.callout {
+  background: var(--launcher-bg-secondary) !important;
+  border: 1px solid var(--launcher-border) !important;
+  border-radius: 6px !important;
+  padding: 0 !important;
+  margin: 0.5rem 0 !important;
+  transition: all 0.15s ease !important;
+}
+
+.callout:hover {
+  border-color: var(--interactive-accent) !important;
+}
+
+/* Hide default callout icon */
+.callout-icon {
+  display: none !important;
+}
+
+/* Hide fold icon */
+.callout-fold {
+  display: none !important;
+}
+
+/* Callout title - compact */
+.callout-title {
+  padding: 0.5rem 0.75rem !important;
+  background: transparent !important;
+  border-bottom: none !important;
+  font-weight: 600 !important;
+  font-size: 0.9rem !important;
+  gap: 0 !important;
+}
+
+.callout-title-inner {
+  font-weight: 600 !important;
+  color: var(--text-normal) !important;
+}
+
+/* Callout content - compact */
+.callout-content {
+  padding: 0 0.75rem 0.5rem 0.75rem !important;
+  font-size: 0.8rem !important;
+  color: var(--text-muted) !important;
+}
+
+.callout-content p {
+  margin: 0 0 0.25rem 0 !important;
+}
+
+/* Links inside callouts */
+.callout-content a {
+  color: var(--interactive-accent) !important;
+  text-decoration: none !important;
+  font-size: 0.75rem !important;
+}
+
+.callout-content a:hover {
+  text-decoration: underline !important;
+}
+
+/* Status callouts - left border accent */
+.callout[data-callout="success"],
+.callout[data-callout="done"],
+.callout[data-callout="check"] {
+  border-left: 3px solid var(--color-green) !important;
+}
+
+.callout[data-callout="info"],
+.callout[data-callout="note"] {
+  border-left: 3px solid var(--color-blue) !important;
+}
+
+.callout[data-callout="warning"],
+.callout[data-callout="caution"] {
+  border-left: 3px solid var(--color-orange) !important;
+}
+
+.callout[data-callout="danger"],
+.callout[data-callout="error"],
+.callout[data-callout="bug"] {
+  border-left: 3px solid var(--color-red) !important;
+}
+
+/* System callouts */
+.callout[data-callout="windows"] {
+  border-left: 3px solid #0078d4 !important;
+}
+
+.callout[data-callout="linux"],
+.callout[data-callout="wsl"] {
+  border-left: 3px solid #e95420 !important;
+}
+
+.callout[data-callout="server"],
+.callout[data-callout="vps"] {
+  border-left: 3px solid #6366f1 !important;
+}

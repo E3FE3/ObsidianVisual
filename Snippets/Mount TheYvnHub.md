@@ -17,14 +17,19 @@ rclone mount TheYvnHub:/ V: --vfs-cache-mode full --volname "TheYvnHub"
 ```
 
 ## Примеры использования
+
+**Монтирование в foreground (видны логи)**
 ```powershell
-# Монтирование в foreground (видны логи)
 rclone mount theyvnhub: V: --vfs-cache-mode full --volname "TheYvnHub" -v
+```
 
-# Монтирование в background
+**Монтирование в background**
+```powershell
 Start-Process rclone -ArgumentList "mount","theyvnhub:","V:","--vfs-cache-mode","full","--volname","TheYvnHub" -WindowStyle Hidden
+```
 
-# Размонтирование
+**Размонтирование**
+```powershell
 taskkill /IM rclone.exe /F
 ```
 

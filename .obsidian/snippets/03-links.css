@@ -1,0 +1,43 @@
+/* =============================================
+   LAUNCHER - Links & Buttons Styling
+   ============================================= */
+
+/* Internal links - clean style */
+.markdown-preview-view .internal-link {
+  color: var(--interactive-accent) !important;
+  text-decoration: none !important;
+}
+
+.markdown-preview-view .internal-link:hover {
+  text-decoration: underline !important;
+}
+
+/* Hide file icons before links */
+.markdown-preview-view .internal-link::before {
+  display: none !important;
+}
+
+/* External links */
+.markdown-preview-view .external-link {
+  color: var(--interactive-accent) !important;
+}
+
+/* Button-style links using bold syntax **[[link|text]]** */
+.markdown-preview-view strong a.internal-link {
+  display: inline-block !important;
+  background: var(--background-secondary) !important;
+  border: 1px solid var(--background-modifier-border) !important;
+  border-radius: 4px !important;
+  padding: 0.35rem 0.7rem !important;
+  color: var(--text-normal) !important;
+  text-decoration: none !important;
+  font-weight: 500 !important;
+  font-size: 0.8rem !important;
+  transition: all 0.15s ease !important;
+}
+
+.markdown-preview-view strong a.internal-link:hover {
+  background: var(--background-secondary-alt) !important;
+  border-color: var(--interactive-accent) !important;
+  text-decoration: none !important;
+}
