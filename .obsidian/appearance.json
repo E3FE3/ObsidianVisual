@@ -1,4 +1,9 @@
 {
+  "cssTheme": "AppleMusic",
+  "theme": "obsidian",
+  "interfaceFontFamily": "-apple-system, BlinkMacSystemFont, \"SF Pro Text\", \"Inter\", sans-serif",
+  "textFontFamily": "-apple-system, BlinkMacSystemFont, \"SF Pro Text\", \"Inter\", sans-serif",
+  "monospaceFontFamily": "\"SF Mono\", \"Menlo\", monospace",
   "enabledCssSnippets": [
     "02-tables",
     "03-links",
