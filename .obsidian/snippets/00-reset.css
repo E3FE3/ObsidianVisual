@@ -1,0 +1,27 @@
+/* =============================================
+   GLOBAL RESET - Normalize Obsidian defaults
+   ============================================= */
+
+/* Remove browser defaults */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Fix line height */
+body, html {
+  line-height: 1.5;
+}
+
+/* Normalize images */
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Better focus states */
+:focus-visible {
+  outline: 2px solid var(--interactive-accent);
+  outline-offset: 2px;
+}

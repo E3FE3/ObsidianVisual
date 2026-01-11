@@ -1,0 +1,55 @@
+/* =============================================
+   GRID SYSTEM - Flexible Layouts
+   ============================================= */
+
+/* Dashboard grid */
+.dashboard-grid {
+  display: grid !important;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)) !important;
+  gap: 1rem !important;
+  margin: 1.5rem 0 !important;
+}
+
+/* Fix Obsidian wrapping */
+.dashboard-grid > p {
+  display: contents !important;
+}
+
+/* Flex containers */
+.flex-row {
+  display: flex !important;
+  gap: 1rem !important;
+}
+
+.flex-col {
+  display: flex !important;
+  flex-direction: column !important;
+  gap: 0.75rem !important;
+}
+
+/* Center content */
+.flex-center {
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+}
+
+/* Space between */
+.flex-between {
+  display: flex !important;
+  align-items: center !important;
+  justify-content: space-between !important;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .dashboard-grid {
+    grid-template-columns: 1fr !important;
+  }
+}
+
+@media (max-width: 480px) {
+  .flex-row {
+    flex-direction: column !important;
+  }
+}

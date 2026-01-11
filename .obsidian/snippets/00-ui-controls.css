@@ -1,0 +1,44 @@
+/* =============================================
+   UI CONTROLS - Inputs, Checkboxes, Scrollbars
+   ============================================= */
+
+/* Hide metadata panel */
+.metadata-container,
+.metadata-properties-heading,
+.metadata-properties {
+  display: none !important;
+}
+
+/* Better checkboxes */
+input[type="checkbox"] {
+  width: 18px;
+  height: 18px;
+  cursor: pointer;
+}
+
+/* Better inputs */
+input[type="text"],
+input[type="email"],
+textarea {
+  padding: 0.5rem 0.75rem;
+  border: 1px solid var(--launcher-border);
+  border-radius: var(--launcher-radius-sm);
+}
+
+/* Scrollbar styling */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--launcher-border);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--text-faint);
+}

@@ -1,42 +1,24 @@
 /* =============================================
-   LAUNCHER - Layout & Spacing
+   LAYOUT & SPACING - General page layout
    ============================================= */
 
 /* Reading view container */
 .markdown-preview-view {
-  max-width: 800px !important;
+  max-width: 900px !important;
   margin: 0 auto !important;
-  padding: 1rem 1.5rem !important;
+  padding: 2rem 1.5rem !important;
 }
 
-/* Remove default margins for cleaner look */
+/* Remove default margins */
 .markdown-preview-view .markdown-preview-sizer {
   padding: 0 !important;
 }
 
-/* Hide properties panel for cleaner dashboard look */
-.metadata-container,
-.metadata-properties-heading,
-.metadata-properties {
-  display: none !important;
-}
-
-/* Hide inline title for dashboard pages */
-body.dashboard .inline-title,
-body.dashboard .mod-header {
-  display: none !important;
-}
-
-/* Horizontal rules - subtle */
+/* Horizontal rules */
 .markdown-preview-view hr {
   border: none !important;
-  border-top: 1px solid var(--background-modifier-border-faint) !important;
-  margin: 1.5rem 0 !important;
-}
-
-/* Divider styling */
-.markdown-preview-view .mod-header {
-  margin-top: 2rem !important;
+  border-top: 1px solid var(--launcher-border) !important;
+  margin: 2rem 0 !important;
 }
 
 /* Embedded content */
@@ -44,7 +26,7 @@ body.dashboard .mod-header {
   border: 1px solid var(--launcher-border) !important;
   border-radius: var(--launcher-radius-md) !important;
   padding: 1rem !important;
-  margin: var(--launcher-gap-md) 0 !important;
+  margin: 1rem 0 !important;
 }
 
 .markdown-embed-title {

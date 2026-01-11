@@ -1,0 +1,39 @@
+/* =============================================
+   LISTS - Ordered & Unordered
+   ============================================= */
+
+.markdown-preview-view ul,
+.markdown-preview-view ol {
+  padding-left: 1.5rem !important;
+  margin-bottom: 0.75rem !important;
+}
+
+.markdown-preview-view li {
+  margin-bottom: 0.5rem !important;
+  line-height: 1.6 !important;
+}
+
+/* Nested lists */
+.markdown-preview-view ul ul,
+.markdown-preview-view ol ol {
+  margin-top: 0.25rem !important;
+}
+
+/* List markers */
+.markdown-preview-view ul > li::marker {
+  color: var(--launcher-accent);
+}
+
+.markdown-preview-view ol > li::marker {
+  color: var(--text-muted);
+  font-weight: 600;
+}
+
+/* Task lists */
+.markdown-preview-view .task-list-item {
+  list-style: none !important;
+}
+
+.markdown-preview-view .task-list-item-checkbox {
+  margin-right: 0.5rem !important;
+}
