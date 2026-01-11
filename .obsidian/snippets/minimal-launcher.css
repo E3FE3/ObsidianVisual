@@ -147,6 +147,7 @@
 
 .cards .dataview.table-view-table {
   display: table !important;
+  table-layout: fixed !important;
   border: 1px solid var(--background-modifier-border) !important;
   border-radius: 10px !important;
   overflow: visible !important;
@@ -161,6 +162,11 @@
 .cards .dataview.table-view-table thead {
   display: table-header-group !important;
   background: var(--background-secondary-alt) !important;
+  position: static !important;
+}
+
+.cards .dataview.table-view-table thead tr {
+  position: static !important;
 }
 
 .cards .dataview.table-view-table tbody {
@@ -173,6 +179,7 @@
 
 .cards .dataview.table-view-table th {
   display: table-cell !important;
+  position: static !important;
   font-size: 0.65rem !important;
   font-weight: 600 !important;
   text-transform: uppercase !important;
