@@ -108,3 +108,16 @@ body {
   --link-external-decoration: none !important;
   --link-external-decoration-hover: none !important;
 }
+
+/* Force remove underlines from ALL links */
+a, a:hover, a:focus, a:active {
+  text-decoration: none !important;
+}
+
+.internal-link, .internal-link:hover, .internal-link:focus, .internal-link:active {
+  text-decoration: none !important;
+}
+
+.external-link, .external-link:hover, .external-link:focus, .external-link:active {
+  text-decoration: none !important;
+}
