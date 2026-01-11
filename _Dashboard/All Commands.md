@@ -7,7 +7,7 @@ cssclasses: dashboard
 # 📚 Все команды
 ### Полный каталог команд инфраструктуры
 
-[[Home|← Вернуться на главную]]
+[[_Dashboard/Home|🏠 Вернуться на главную]]
 
 ---
 
@@ -16,14 +16,14 @@ cssclasses: dashboard
 ## 🔍 Фильтры
 
 > [!example]+ Фильтр по системе
-> - [[Windows|🪟 WINDOWS]] - Команды для Windows PC
-> - [[WSL|🐧 WSL]] - Команды для WSL Ubuntu
-> - [[VPS|🌐 VPS]] - Команды для VPS серверов
+> - [[Systems/WINDOWS/Windows|🪟 WINDOWS]] - Команды для Windows PC
+> - [[Systems/WSL/WSL|🐧 WSL]] - Команды для WSL Ubuntu
+> - [[Systems/VPS/VPS|🌐 VPS]] - Команды для VPS серверов
 
 > [!tip]+ Фильтр по технологии
-> - [[rclone|🔐 rclone]] - Монтирование и синхронизация
-> - [[ssh|🔑 ssh]] - SSH подключения
-> - [[podman|📦 podman]] - Управление контейнерами
+> - [[Technologies/rclone|🔐 rclone]] - Монтирование и синхронизация
+> - [[Technologies/ssh|🔑 ssh]] - Команды SSH подключения
+> - [[Technologies/podman|📦 podman]] - Управление контейнерами
 
 ---
 
@@ -85,7 +85,7 @@ SORT length(rows) DESC
 
 ### 🎯 Быстрые действия
 
-[[Command|📝 Создать команду]] • [[Home|🏠 На главную]] • [[README|📖 Документация]]
+[[_Templates/Command|📝 Создать команду]] • [[_Dashboard/Home|🏠 На главную]] • [[README|📖 Документация]]
 
 ---
 
