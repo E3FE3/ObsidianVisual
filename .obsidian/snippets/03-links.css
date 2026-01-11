@@ -14,7 +14,6 @@
   background-position: 1.5em 100% !important; /* Start after icon */
   background-repeat: no-repeat !important;
   background-size: calc(100% - 1.5em) 1px !important;
-  padding-left: 1.5em !important; /* Space for icon */
 }
 
 /* Don't hide SVG icons - keep them visible */
