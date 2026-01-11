@@ -2,11 +2,6 @@
    LAUNCHER - Headings & Typography
    ============================================= */
 
-/* Hide inline title for dashboard */
-body.dashboard .inline-title {
-  display: none !important;
-}
-
 /* H1 - Page title */
 .markdown-preview-view h1 {
   font-size: 1.5rem !important;
@@ -52,45 +47,4 @@ body.dashboard .inline-title {
 .markdown-preview-view p {
   line-height: 1.6 !important;
   margin-bottom: 0.75rem !important;
-}
-
-/* Lists */
-.markdown-preview-view ul,
-.markdown-preview-view ol {
-  padding-left: 1.5rem !important;
-  margin-bottom: 0.75rem !important;
-}
-
-.markdown-preview-view li {
-  margin-bottom: 0.25rem !important;
-}
-
-/* Code blocks */
-.markdown-preview-view code {
-  background: var(--launcher-bg-secondary) !important;
-  border: 1px solid var(--launcher-border) !important;
-  border-radius: var(--launcher-radius-sm) !important;
-  padding: 0.15rem 0.4rem !important;
-  font-size: 0.85em !important;
-}
-
-.markdown-preview-view pre {
-  background: var(--launcher-bg-secondary) !important;
-  border: 1px solid var(--launcher-border) !important;
-  border-radius: var(--launcher-radius-md) !important;
-  padding: 1rem !important;
-  overflow-x: auto !important;
-}
-
-.markdown-preview-view pre code {
-  background: transparent !important;
-  border: none !important;
-  padding: 0 !important;
-}
-
-/* Horizontal rule */
-.markdown-preview-view hr {
-  border: none !important;
-  border-top: 1px solid var(--launcher-border) !important;
-  margin: 2rem 0 !important;
 }

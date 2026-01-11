@@ -9,7 +9,7 @@
   border-radius: var(--launcher-radius-lg) !important;
   border-collapse: separate !important;
   border-spacing: 0 !important;
-  overflow: hidden !important;
+  overflow: visible !important;
   margin: var(--launcher-gap-md) 0 !important;
   font-size: 0.85rem !important;
 }
