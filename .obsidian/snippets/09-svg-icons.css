@@ -45,7 +45,7 @@
 }
 
 /* Terminal - WSL */
-.internal-link[href*="WSL"]::before {
+.internal-link[href*="Wsl"]::before {
   content: '' !important;
   display: inline-block !important;
   width: 1.2em !important;
@@ -59,7 +59,7 @@
 }
 
 /* Globe - VPS */
-.internal-link[href*="VPS"]::before,
+.internal-link[href*="Vps"]::before,
 .internal-link[href*="TheYvn"]::before {
   content: '' !important;
   display: inline-block !important;
@@ -174,8 +174,8 @@
 /* === FIX UNDERLINE === */
 /* Remove underline from icon, keep only under text */
 .internal-link[href*="Windows"],
-.internal-link[href*="WSL"],
-.internal-link[href*="VPS"],
+.internal-link[href*="Wsl"],
+.internal-link[href*="Vps"],
 .internal-link[href*="TheYvn"],
 .internal-link[href*="rclone"],
 .internal-link[href*="ssh"],
@@ -190,8 +190,8 @@
 }
 
 .internal-link[href*="Windows"]:hover,
-.internal-link[href*="WSL"]:hover,
-.internal-link[href*="VPS"]:hover,
+.internal-link[href*="Wsl"]:hover,
+.internal-link[href*="Vps"]:hover,
 .internal-link[href*="TheYvn"]:hover,
 .internal-link[href*="rclone"]:hover,
 .internal-link[href*="ssh"]:hover,
