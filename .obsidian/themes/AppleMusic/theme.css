@@ -1,0 +1,217 @@
+/**
+ * Apple Music Theme for Obsidian
+ * Inspired by Apple Music Desktop (Dark Mode)
+ *
+ * Accent Color: Fire Orange (#E85D3D)
+ * Author: Jules
+ */
+
+/* ==========================================================================
+   VARIABLES & COLOR PALETTE
+   ========================================================================== */
+.theme-dark {
+  /* --- Base Colors --- */
+  --bg-1: #1E1E1E; /* Main Content Background */
+  --bg-2: #262626; /* Sidebar / Panels */
+  --bg-3: #2C2C2C; /* Cards / Inputs */
+  --bg-selection: rgba(232, 93, 61, 0.2);
+
+  /* --- Obsidian Mappings --- */
+  --background-primary: var(--bg-1);
+  --background-primary-alt: var(--bg-2);
+  --background-secondary: var(--bg-2);
+  --background-secondary-alt: var(--bg-1);
+  --background-modifier-border: rgba(255, 255, 255, 0.08);
+  --background-modifier-form-field: var(--bg-3);
+
+  /* --- Typography Colors --- */
+  --text-normal: #FFFFFF;
+  --text-muted: #98989D;   /* Apple Secondary Label Color */
+  --text-faint: #636366;   /* Apple Tertiary Label Color */
+  --text-on-accent: #FFFFFF;
+
+  /* --- Accent --- */
+  --accent-h: 11;
+  --accent-s: 78%;
+  --accent-l: 57%;
+  --interactive-accent: #E85D3D;
+  --interactive-accent-hover: #FF6B4A;
+  --interactive-accent-rgb: 232, 93, 61;
+  --text-accent: #E85D3D;
+  --text-accent-hover: #FF6B4A;
+
+  /* --- Dimensions & Spacing --- */
+  --radius-s: 6px;
+  --radius-m: 10px;
+  --radius-l: 12px;
+  --input-radius: 6px;
+  --button-radius: 8px;
+
+  /* --- Typography --- */
+  --font-interface: -apple-system, BlinkMacSystemFont, "SF Pro Text", "Inter", sans-serif;
+  --font-text: -apple-system, BlinkMacSystemFont, "SF Pro Text", "Inter", sans-serif;
+  --font-monospace: "SF Mono", "Menlo", monospace;
+
+  /* --- Shadows --- */
+  --shadow-s: 0 1px 2px rgba(0,0,0,0.3);
+  --shadow-l: 0 10px 30px rgba(0,0,0,0.5);
+}
+
+/* ==========================================================================
+   APP STRUCTURE & LAYOUT
+   ========================================================================== */
+
+/* --- Sidebar (Left Split) --- */
+.workspace-split.mod-left-split,
+.workspace-ribbon.mod-left {
+  background-color: var(--background-secondary);
+}
+
+/* Translucency Effect for Sidebar */
+body.is-translucent .workspace-split.mod-left-split,
+body.is-translucent .workspace-ribbon.mod-left {
+  background-color: rgba(38, 38, 38, 0.7);
+  backdrop-filter: saturate(180%) blur(20px);
+}
+
+/* Sidebar Navigation Items */
+.nav-file-title, .nav-folder-title {
+  border-radius: 8px;
+  padding: 4px 12px;
+  margin: 0 8px;
+  font-size: 14px;
+  color: var(--text-muted);
+  transition: background-color 0.15s ease, color 0.15s ease;
+}
+
+.nav-file-title:hover, .nav-folder-title:hover {
+  background-color: rgba(255, 255, 255, 0.05);
+  color: var(--text-normal);
+}
+
+/* Active File in Sidebar */
+.nav-file-title.is-active {
+  background-color: rgba(255, 255, 255, 0.1);
+  color: var(--interactive-accent);
+  font-weight: 600;
+}
+
+/* Sidebar Headers */
+.nav-folder.mod-root > .nav-folder-title {
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 11px;
+  letter-spacing: 0.05em;
+  color: var(--text-faint);
+  padding-top: 16px;
+}
+
+/* --- Main Content View --- */
+.view-content {
+  background-color: var(--background-primary);
+}
+
+/* Title Bar (Mac Style) */
+.titlebar {
+  background-color: var(--background-secondary);
+  border-bottom: 1px solid var(--background-modifier-border);
+}
+
+.view-header {
+  background-color: var(--background-primary);
+  border-bottom: 1px solid var(--background-modifier-border);
+}
+
+/* ==========================================================================
+   TYPOGRAPHY
+   ========================================================================== */
+
+h1, h2, h3, h4, h5, h6 {
+  color: var(--text-normal);
+  letter-spacing: -0.01em;
+}
+
+h1 { font-weight: 700; }
+h2 { font-weight: 600; }
+
+/* Links */
+a, .cm-link {
+  color: var(--text-accent);
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* ==========================================================================
+   UI COMPONENTS
+   ========================================================================== */
+
+/* Buttons */
+button.mod-cta {
+  background-color: var(--interactive-accent);
+  color: white;
+  font-weight: 500;
+  border-radius: var(--button-radius);
+  transition: opacity 0.2s;
+}
+
+button.mod-cta:hover {
+  background-color: var(--interactive-accent-hover);
+  box-shadow: 0 2px 8px rgba(232, 93, 61, 0.3);
+}
+
+/* Checkboxes */
+input[type="checkbox"] {
+  border-radius: 4px;
+  border: 1px solid var(--text-muted);
+  appearance: none;
+  width: 16px;
+  height: 16px;
+  transition: all 0.2s ease;
+}
+
+input[type="checkbox"]:checked {
+  background-color: var(--interactive-accent);
+  border-color: var(--interactive-accent);
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 14 14'%3E%3Cpath fill='white' d='M3.5 7L5.5 9L10.5 4' stroke='white' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");
+}
+
+/* Toggle Switch (Apple Style) */
+.checkbox-container.is-enabled {
+  background-color: var(--interactive-accent) !important;
+}
+
+/* Scrollbars (hidden/overlay style) */
+::-webkit-scrollbar {
+  width: 10px;
+  background-color: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: rgba(255, 255, 255, 0.2);
+  border-radius: 10px;
+  border: 3px solid transparent;
+  background-clip: content-box;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: rgba(255, 255, 255, 0.4);
+}
+
+/* ==========================================================================
+   COMPATIBILITY FIXES
+   ========================================================================== */
+
+/* Fix for Minimal Theme specific selectors if present */
+body.theme-light, body.theme-dark {
+  --font-ui: var(--font-interface);
+}
+
+/* Status Bar */
+.status-bar {
+  background-color: var(--background-secondary);
+  border-top: 1px solid var(--background-modifier-border);
+  color: var(--text-muted);
+}
