@@ -101,7 +101,7 @@ button:hover,
 }
 
 /* === MINIMAL THEME LINK CONTROL === */
-/* Remove underlines for Minimal theme */
+/* Remove underlines for Minimal theme - AGGRESSIVE APPROACH */
 body { 
   --link-decoration: none !important; 
   --link-decoration-hover: none !important;
@@ -109,13 +109,26 @@ body {
   --link-external-decoration-hover: none !important;
 }
 
-/* Additional Minimal theme specific overrides */
+/* Override ALL possible Minimal theme selectors */
+body.minimal-theme a,
+body.minimal-theme a:hover,
+body.minimal-theme a:focus,
+body.minimal-theme a:active,
 .minimal-theme .internal-link,
-.minimal-theme .internal-link:hover {
-  text-decoration: none !important;
-}
-
+.minimal-theme .internal-link:hover,
+.minimal-theme .internal-link:focus,
+.minimal-theme .internal-link:active,
 .minimal-theme .external-link,
-.minimal-theme .external-link:hover {
+.minimal-theme .external-link:hover,
+.minimal-theme .external-link:focus,
+.minimal-theme .external-link:active,
+.markdown-preview-view.minimal-theme a,
+.markdown-preview-view.minimal-theme a:hover,
+.markdown-preview-view.minimal-theme .internal-link,
+.markdown-preview-view.minimal-theme .internal-link:hover,
+.markdown-source-view.mod-cm6.minimal-theme .cm-link,
+.markdown-source-view.mod-cm6.minimal-theme .cm-link:hover {
   text-decoration: none !important;
+  border-bottom: none !important;
+  box-shadow: none !important;
 }
