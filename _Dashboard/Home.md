@@ -120,11 +120,53 @@ LIMIT 10
       <h3 class="card-title">podman</h3>
     </div>
     <div class="card-body">
-      <p>Управление контейнерами на VPS серверах</p>
+      <p>Управление контейнерами и подами на VPS</p>
       <span class="badge badge-warning">В разработке</span>
     </div>
     <div class="card-footer">
       <a href="Technologies/podman" class="btn btn-primary">Подробнее →</a>
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="card-header">
+      <span class="card-icon">🧠</span>
+      <h3 class="card-title">ollama</h3>
+    </div>
+    <div class="card-body">
+      <p>Запуск и управление LLM моделями</p>
+      <span class="badge badge-success">Активно</span>
+    </div>
+    <div class="card-footer">
+      <a href="Technologies/ollama" class="btn btn-primary">Подробнее →</a>
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="card-header">
+      <span class="card-icon">📊</span>
+      <h3 class="card-title">monitoring</h3>
+    </div>
+    <div class="card-body">
+      <p>Состояние систем и сервисов в реальном времени</p>
+      <span class="badge badge-success">Активно</span>
+    </div>
+    <div class="card-footer">
+      <a href="Technologies/monitoring" class="btn btn-primary">Подробнее →</a>
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="card-header">
+      <span class="card-icon">💾</span>
+      <h3 class="card-title">backup</h3>
+    </div>
+    <div class="card-body">
+      <p>Резервное копирование и восстановление</p>
+      <span class="badge badge-info">Настроено</span>
+    </div>
+    <div class="card-footer">
+      <a href="Technologies/backup" class="btn btn-primary">Подробнее →</a>
     </div>
   </div>
 </div>
