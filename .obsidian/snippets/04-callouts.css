@@ -98,5 +98,5 @@
 
 .callout[data-callout="server"],
 .callout[data-callout="vps"] {
-  border-left: 3px solid #6366f1 !important;
+  border-left: 3px solid var(--launcher-server) !important;
 }
